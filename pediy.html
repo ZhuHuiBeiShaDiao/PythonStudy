@@ -1,0 +1,3486 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://bbs.pediy.com/ -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	
+	
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="XiunoBBS 4.0">
+	<meta name="keywords" content="">
+	<meta name="description" content="致力于PC、移动、智能设备安全研究及逆向工程的开发者社区。">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+	<title>
+		看雪安全论坛	</title>
+
+	<link rel="shortcut icon" href="https://bbs.pediy.com/view/img/favicon.ico">
+	<link rel="icon" sizes="32x32" href="https://bbs.pediy.com/view/img/favicon.ico">
+	<link rel="Bookmark" href="https://bbs.pediy.com/view/img/favicon.ico">
+	<link rel="stylesheet" href="./pediy_files/bootstrap.css">
+
+	<link rel="stylesheet" href="./pediy_files/bootstrap-bbs.css">
+	<!-- <link rel="stylesheet" href="view/css/bootstrap-icon.css"> -->
+	<link rel="stylesheet" href="./pediy_files/kanxue.css">
+	<style>
+		
+		@media only screen and (max-width: 780px) {
+			.card > .card-body {
+				padding: 0.3rem 0.5rem;
+			}
+			#body {
+				padding: 0.5rem 0.5rem;
+			}
+			.container {
+				padding-left: 0;
+				padding-right: 0; 
+			}
+		}
+		.content_box ul.nav .nav-link.active {
+			border-bottom: 3px solid #0099ee;
+		}
+	</style>
+
+	<style>
+/*
+box-shadow: 0 0 5px red;
+*/
+@keyframes xndigest {
+	0% { color: red; text-shadow: 0 0 3px #FF8D8D;} 
+	20% { color: orange; text-shadow: 0 0 3px #FFE1AD;} 
+	40% { color: green; text-shadow: 0 0 3px #B3FFAF;} 
+	65% { color: blue; text-shadow: 0 0 3px #AFE4FF;} 
+	80% { color: purple; text-shadow: 0 0 3px #FFC9F3;} 
+	100% { color: red; text-shadow: 0 0 3px #FF8D8D;} 
+}
+
+/*水晶闪烁效果 占内存*/
+i.icon-diamond.flash{color: #D53D38;  /*animation: xndigest 5s linear infinite;*/ }
+
+i.icon-digest-1 {  text-shadow: 0 0 3px #AFE4FF; }
+i.icon-digest-2 {  text-shadow: 0 0 3px #FFF177; }
+i.icon-digest-3 {  text-shadow: 0 0 3px #FF8D8D; }
+.icon-digest-1:before { content: "\f219";  color: #5BC0DE;} /* "\f0a5" */
+.icon-digest-2:before { content: "\f219";  color: #ECA541;}
+.icon-digest-3:before { content: "\f219"; color: #D53D38;}
+.icon-digest-3:afteer { content: "精"; color: #D53D38;}
+</style><style>
+.deleted div.subject > a { text-decoration: line-through; color: grey !important; }
+.deleted div.message { text-decoration: line-through; color: grey !important; }
+</style><style>
+/*
+.toggle_more {
+	max-height: 100px;
+}
+*/
+.update_log_list a.update_log_history, 
+.update_log_list a.update_log_delete {
+	display: none;
+}
+
+.update_log_list > li:hover {
+	background: var(--gray-300);
+}
+.update_log_list > li:hover > a.update_log_history, 
+.update_log_list > li:hover > a.update_log_delete {
+	display: inline-block;
+}
+
+</style><style>
+.icon-new { width: 26px; height: 12px; display: inline-block; background: url(view/img/new.gif)}
+</style>
+<link rel="stylesheet" href="./pediy_files/layer.css" id="layuicss-skinlayercss"><script src="./pediy_files/ga.js.下载"></script></head>
+
+<body>
+
+	
+
+	<style>
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+#header {
+    /* border-top: 3px solid #0099ee; */
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1), 0 1px rgba(0, 0, 0, 0.1);
+    background: #fafafa;
+}
+
+#header .container {
+    height: 64px;
+    line-height: 64px;
+}
+
+#header .navbar {
+    padding: 0;
+}
+
+#header nav li.nav-item {
+    line-height: 34px;
+}
+
+#header nav a.nav-link, #header .login_btn {
+    font-size: 16px;
+    color: #757575;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#header nav a.nav-link,
+#header nav .dropdown {
+    padding: 0 1rem;
+}
+
+#header nav a.nav-link:hover {
+    background-color: #F3F3F3;
+}
+
+#header nav li.nav-item.active a {
+    color: #0099ee;
+    font-weight: 600;
+}
+
+#header nav .home_seach_form {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#header nav .dropdown a.dropdown-item:hover {
+    color: #0099ee;
+    text-decoration: none;
+    background-color: #f3f3f3;
+}
+
+.dropup .dropdown-toggle::after {
+    display: none !important;
+}
+.header_nav_a {
+    /* padding: 10px 0; */
+}
+.bottom-nav {
+    /* display: none; */
+    background-color: #fafafa;
+    box-shadow: 0 -1px rgba(0,0,0,0.1), 0 -2px 10px rgba(0,0,0,0.1);
+}
+.bottom-nav .opts-group {
+    position: relative;
+    display: inline-block;
+    /* padding-top: 6px; */
+    line-height: 20px;
+    color: #9e9e9e;
+    cursor: pointer;
+}
+.bottom-nav .opts-group.active {
+    color: #0099ee;
+}
+
+@media only screen and (min-width: 992px) {
+    .bottom-nav, .header_seach_but {
+        display: none !important;
+    }
+    
+}
+@media only screen and (max-width: 992px) {
+    .nav-logo {
+        margin-right: 0 !important;
+    }
+    .nav_user_item {
+        width: 90px;
+    }
+}
+
+.seach_li {
+    margin-left: 120px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .seach_li {
+        margin-left: 0px !important;
+        width: 100%;
+        max-width: 150px !important;
+    }
+}
+</style>
+<header id="header">
+    <div class="container" style="padding-right: 15px;padding-left: 15px;">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="https://bbs.pediy.com/search.htm" class="header_seach_but" style="display:block; width: 90px;"><i class="icon-search" aria-hidden="true"></i></a>
+            <a class="navbar-brand nav-logo" href="https://bbs.pediy.com/" style="line-height: 0px;">
+                <img src="./pediy_files/kanxuelogo.png" height="25">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.kanxue.com/">首页</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://bbs.pediy.com/">论坛</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="https://zhuanlan.kanxue.com/">专栏</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.kanxue.com/course.htm">课程</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                            <a class="nav-link" href="https://ctf.pediy.com/">CTF</a>
+                            <img class="position-absolute" style="width: 27px; top: -5px; right: -7px; z-index: 3;" src="./pediy_files/hot.png" alt="">
+                    </li>
+                    <li class="nav-item position-relative">
+                            <a class="nav-link" href="https://www.kanxue.com/conference.htm">看雪峰会</a>
+                            <img class="position-absolute" style="width: 27px; top: -5px; right: -7px; z-index: 3;" src="./pediy_files/hot.png" alt="">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://qifu.kanxue.com/">企服</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://job.kanxue.com/">招聘</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle nav-link px-0" href="https://bbs.pediy.com/#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                发现
+                            </a>
+                            <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                                <!-- <a class="dropdown-item" href="//ctf.pediy.com">CTF</a> -->
+                                <a class="dropdown-item" href="https://ce.kanxue.com/">众测</a>
+                                <a class="dropdown-item" href="https://www.kanxue.com/rank.htm">排行榜</a>
+                                <a class="dropdown-item" href="https://www.kanxue.com/chm.htm">知识库</a>
+                                <a class="dropdown-item" href="https://www.kanxue.com/tool.htm">工具下载</a>
+                                <!-- <a class="dropdown-item" href="//www.kanxue.com/conference.htm">看雪峰会</a> -->
+                                <a class="dropdown-item" href="https://www.kanxue.com/mrt.htm">看雪20年</a>
+                                <a class="dropdown-item" href="https://www.kanxue.com/shop.htm">看雪商城</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="seach_li">
+                        <form class="form-inline my-2 my-lg-0 mr-auto" action="https://bbs.pediy.com/search.htm" id="search_form" style="margin-right: 20px;">
+                            <div class="input-group home_seach_form">
+                                <input type="text" class="form-control border-0" name="keyword" placeholder="论坛关键词 回车搜索">
+                                <div class="input-group-append">
+                                    <button class="btn " type="submit" id="button-addon2">
+                                        <i class="icon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="text-right nav_user_item" style="white-space: nowrap;">
+                                    
+                <a class="login_btn" href="https://passport.kanxue.com/user-login.htm"><span style=" color: #0099ee;">登录</span></a>
+
+                            </div>
+            
+        </nav>
+    </div>
+</header>
+<div class="position-fixed w-100 header_fiexd bottom-nav" style="width: 100%; height: 50px; bottom: 0px; z-index: 2; background: rgb(250, 250, 250); display: none;">
+    <div class="row mx-0 text-center align-items-center" style="height: 50px;">
+        <a href="https://www.kanxue.com/" class="d-inline-blok col px-0 header_nav_a opts-group " style="max-width: 20%;">
+            <div>
+                <i class="icon-home"></i>
+            </div>
+            <div>
+                首页
+            </div>
+        </a>
+        <a href="https://bbs.pediy.com/" class="d-inline-blok col px-0 header_nav_a opts-group active" style="max-width: 20%;">
+            <div>
+                <i class="icon-comments"></i>
+
+            </div>
+            <div>
+                论坛
+            </div>
+        </a>
+        <a href="https://zhuanlan.kanxue.com/" class="d-inline-blok col px-0 header_nav_a opts-group " style="max-width: 20%;">
+            <div>
+                <i class="icon-clipboard"></i>
+            </div>
+            <div>
+                专栏
+            </div>
+        </a>
+        <a href="https://www.kanxue.com/course.htm" class="d-inline-blok col px-0 header_nav_a opts-group" style="max-width: 20%;">
+            <div>
+                <i class="icon-book"></i>
+            </div>
+            <div>
+                课程
+            </div>
+        </a>
+        
+        <!-- <a href="#" class="d-inline-blok col px-0" style="max-width: 20%;"> -->
+        <div class=" dropup d-inline-blok col px-0" style="max-width: 20%;">
+            <a class="dropdown-toggle d-inline-block header_nav_a opts-group" href="https://bbs.pediy.com/#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div>
+
+                    <i class="icon-list"></i>
+                </div>
+                <div>
+                    发现
+                </div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="https://job.kanxue.com/">招聘</a>
+                <a class="dropdown-item" href="https://ctf.pediy.com/">CTF</a>
+                <a class="dropdown-item" href="https://ce.kanxue.com/">众测</a>
+                <a class="dropdown-item" href="https://www.kanxue.com/rank.htm">排行榜</a>
+                <a class="dropdown-item" href="https://www.kanxue.com/chm.htm">知识库</a>
+                <a class="dropdown-item" href="https://www.kanxue.com/tool.htm">工具下载</a>
+                <a class="dropdown-item" href="https://www.kanxue.com/conference.htm">看雪峰会</a>
+                <a class="dropdown-item" href="https://www.kanxue.com/mrt.htm">看雪20年</a>
+                <a class="dropdown-item" href="https://www.kanxue.com/shop.htm">看雪商城</a>
+            </div>
+        </div>
+        <!-- </a> -->
+    </div>
+</div>
+
+
+
+
+				<main style="background: #f0f5f8 url(plugin/kanxue/img/body_bg.jpg) repeat-x" id="body"> 
+		<div class="container">
+					
+
+			
+
+
+	<!--
+<div style="text-align: right; margin-bottom: -34px; margin-top: 6px;" class="hidden-sm hidden-md">
+		<a href="thread-create-0.htm" role="button" class="btn btn-sm btn-primary mr-2 mt-2">发新帖</a>
+</div>
+-->
+	<div class="hidden-lg mt-3">
+		<!-- <div class="btn-group mt-2 mb-1 hidden-lg" role="group">
+			<a role="button" class="btn btn-secondary" href="new-tid.htm">最新主题</a>
+			<a role="button" class="btn btn-secondary" href="new-lastpid.htm">最新回复</a>
+			<a role="button" class="btn btn-secondary" href="new-digest.htm">最新精华</a>
+
+		</div> -->
+		<div>
+			<a class="btn btn-light" style="border:none; box-shadow: 0 1px 1px 0px #929292;background-image: linear-gradient(0deg, #d6d6d6, #fcfdfd); font-weight: 600; color: #2d2d2d;" href="https://bbs.pediy.com/new-tid.htm" role="button">最新主题</a>
+			<a class="btn btn-light" style="border:none; box-shadow: 0 1px 1px 0px #929292;background-image: linear-gradient(0deg, #d6d6d6, #fcfdfd); font-weight: 600; color: #2d2d2d;" href="https://bbs.pediy.com/new-lastpid.htm" role="button">最新回复</a>
+			<a class="btn btn-light" style="border:none; box-shadow: 0 1px 1px 0px #929292;background-image: linear-gradient(0deg, #d6d6d6, #fcfdfd); font-weight: 600; color: #2d2d2d;" href="https://bbs.pediy.com/new-digest.htm" role="button">最新精华</a>
+		</div>
+	</div>
+	<div class="row p-t-sm py-2 mx-0 ">
+		<span class="hidden-sm hidden-md text-small"><span class="text-muted">主题：</span><b>202095</b></span>&nbsp;&nbsp;
+		<span class="text-muted text-small">回帖：</span><b class="text-small">1296925</b>&nbsp;&nbsp;
+		<span class="hidden-sm hidden-md text-small"><span class="text-muted">精华：</span><b class="text-danger  text-small">14937</b></span>&nbsp;&nbsp;
+		<span class="text-muted text-small">会员：</span><b class="text-small">844057</b>&nbsp;&nbsp;
+		<span class="text-muted text-small">在线：</span><b class="text-small">4040</b>    
+	</div>
+	<style>
+	.bbs_home_page_list_div .icon-post-grey {
+		vertical-align: middle;
+	}
+
+	.bbs_home_page_list_div label {
+		display: none!important;
+	}
+
+	.bbs_home_page_row_div:hover {
+		background: #f5f5f5;
+	}
+	@media only screen and (max-width: 993px) {
+		header.navbar .icon_edit {
+			display: none;
+		}
+	}
+	@media only screen and (max-width: 780px) {
+		
+		#body {
+			padding: 0 0.5rem;
+		}
+		.card>.card-header {
+			padding: 0.3rem 1rem;
+		}
+		.card>.card-body {
+			padding: 0.3rem 0.5rem;
+		}
+		.forum_icon {
+			width: 47px;
+			height: 47px;
+			border-radius: 5px;
+		}
+		#cate_parent .cate {
+			padding-left: 0;
+		}
+		#cate_parent dl dt {
+			width: 55px!important;
+		}
+	}
+	</style>
+	<div class="bbs_home_page_three_col px-1 py-1 row mx-0 mb-4 border text-small border-shadow hidden-sm hidden-md" style="border: 1px solid #bbb; background:rgba(255,255,255,0.7); border-radius: 5px;">
+		<div class="col-md-4">
+			<div class="card-title pb-1 mt-2 font-weight-bold" style="line-height: 1.5; margin-bottom: 0.4rem;"> <a href="https://bbs.pediy.com/new-tid.htm">最新主题</a></div>
+			<div class="bbs_home_page_row_div row mx-0 py-1 " tid="250685" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250685.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250685.htm" title="[求助]pc微信数据库的key怎么用sqlcipher打开?">[求助]pc微信数据库的key怎么用sqlcipher打开?</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">10分钟前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250684" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250684.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250684.htm" title="[翻译]谷歌贪吃蛇游戏的逆向研究">[翻译]谷歌贪吃蛇游戏的逆向研究</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">38分钟前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250683" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250683.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250683.htm" title="[求助]简单的密码解密，一道考试题目，没能理解，求讲解。">[求助]简单的密码解密，一道考试题目，没能理解，求讲解。</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">43分钟前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250682" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250682.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250682.htm" title="[讨论]为了避免更新整个APK，大家的项目一般采用什么方式来运行一个活动？">[讨论]为了避免更新整个APK，大家的项目一般采用什么方式来运行一个活动？</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">48分钟前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250681" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250681.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250681.htm" title="[推荐]今年不可错过的网络安全盛会  NSC 2019免费票限量抢">[推荐]今年不可错过的网络安全盛会  NSC 2019免费票限量抢</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">1小时前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250680" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250680.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250680.htm" title="注入 cmd.exe 进程的 ReadConsoleW 和 WriteConsoleW  并将输入输入保存到文件。">注入 cmd.exe 进程的 ReadConsoleW 和 WriteConsoleW  并将输入输入保存到文件。</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">2小时前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250679" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250679.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250679.htm" title="[原创]内存镜像拷贝_已贴代码">[原创]内存镜像拷贝_已贴代码</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">3小时前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250677" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250677.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250677.htm" title="[转帖]Armadillo Key Tool v0.4 by mrexodia">[转帖]Armadillo Key Tool v0.4 by mrexodia</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">7小时前</span>
+			</div>
+
+
+</div><table class="table threadlist">
+				<tbody>
+															<style>
+@media only screen and (max-width: 1200px) {
+	.small_logo {
+		display: none;
+	}
+}
+</style>
+
+
+
+
+
+
+
+
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-4">
+			<div class="card-title pb-1 mt-2 font-weight-bold" style="margin-bottom: 0.4rem;"> <a href="https://bbs.pediy.com/new-lastpid.htm">最新回复</a></div>
+			<div class="bbs_home_page_row_div row mx-0 py-1 " tid="250683" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250683.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250683.htm" title="[求助]简单的密码解密，一道考试题目，没能理解，求讲解。">[求助]简单的密码解密，一道考试题目，没能理解，求讲解。</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">17分钟前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250616" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250616.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250616.htm" title="[原创]xposed新思路，伪代码都见鬼去吧">[原创]xposed新思路，伪代码都见鬼去吧</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">22分钟前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250638" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250638.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250638.htm" title="[原创]浅析：爱国大黑客的病毒木马-CATGAMES">[原创]浅析：爱国大黑客的病毒木马-CATGAMES</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">24分钟前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="225190" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-225190.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-225190.htm" title="[分享]Xposed Hook Apk不在classes.dex中定义的类">[分享]Xposed Hook Apk不在classes.dex中定义的类</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">55分钟前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250676" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250676.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250676.htm" title="[求助]有没有透明加解密 双缓冲的开源代码">[求助]有没有透明加解密 双缓冲的开源代码</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">1小时前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250568" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250568.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250568.htm" title="[求助] 抖音协议发验证码  点赞不行 有没有遇到相同问题的啊">[求助] 抖音协议发验证码  点赞不行 有没有遇到相同问题的啊</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">1小时前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250680" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250680.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250680.htm" title="注入 cmd.exe 进程的 ReadConsoleW 和 WriteConsoleW  并将输入输入保存到文件。">注入 cmd.exe 进程的 ReadConsoleW 和 WriteConsoleW  并将输入输入保存到文件。</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">1小时前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250679" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250679.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250679.htm" title="[原创]内存镜像拷贝_已贴代码">[原创]内存镜像拷贝_已贴代码</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">1小时前</span>
+			</div>
+
+
+</div><table class="table threadlist">
+				<tbody>
+															<style>
+@media only screen and (max-width: 1200px) {
+	.small_logo {
+		display: none;
+	}
+}
+</style>
+
+
+
+
+
+
+
+
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-4">
+			<div class="card-title pb-1 mt-2 font-weight-bold" style="margin-bottom: 0.4rem;"><i class="icon-diamond flash" style="font-size:10px!important; vertical-align: middle;"></i> <a href="https://bbs.pediy.com/new-digest.htm">精华主题</a></div>
+			<div class="bbs_home_page_row_div row mx-0 py-1 " tid="250669" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250669.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250669.htm" title="[原创]CVE-2017-13772分析及mips栈溢出利用总结">[原创]CVE-2017-13772分析及mips栈溢出利用总结</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">1天前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250638" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250638.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250638.htm" title="[原创]浅析：爱国大黑客的病毒木马-CATGAMES">[原创]浅析：爱国大黑客的病毒木马-CATGAMES</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">3天前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250635" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250635.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250635.htm" title="[原创]2018-XNUCA steak 涨姿势">[原创]2018-XNUCA steak 涨姿势</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">3天前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250630" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250630.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250630.htm" title="windows smb协议简单分析">windows smb协议简单分析</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">4天前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250625" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250625.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250625.htm" title="[原创]反编译原理(12)-反混淆">[原创]反编译原理(12)-反混淆</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">4天前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250618" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250618.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250618.htm" title="[原创]用 Lua 简单还原 OpCode 顺序">[原创]用 Lua 简单还原 OpCode 顺序</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">5天前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250616" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250616.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250616.htm" title="[原创]xposed新思路，伪代码都见鬼去吧">[原创]xposed新思路，伪代码都见鬼去吧</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">5天前</span>
+			</div>
+
+
+</div><div class="bbs_home_page_row_div row mx-0 py-1 " tid="250601" style="padding-left: .37rem;line-height: 1.6rem;">
+	<div class="col-auto pl-0 pr-1">
+		<a style="text-decoration: none;" href="https://bbs.pediy.com/thread-250601.htm" title="新窗口打开">
+						<span class="icon-xiuno icon-post-grey" style="vertical-align: middle;"></span>
+		</a>
+	</div>
+	<div class="col-7 px-0 text-truncate">
+		<a class="bbs_home_page_list_title" href="https://bbs.pediy.com/thread-250601.htm" title="[原创] EdXposed &amp; ART Hook 细节分享">[原创] EdXposed &amp; ART Hook 细节分享</a>
+	</div>
+	<div class="col px-0 text-right text-truncate">
+						<span class="date text-grey pl-1 text-nowrap">6天前</span>
+			</div>
+
+
+</div><table class="table threadlist">
+				<tbody>
+															<style>
+@media only screen and (max-width: 1200px) {
+	.small_logo {
+		display: none;
+	}
+}
+</style>
+
+
+
+
+
+
+
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	
+
+	<style>
+	#homenotice ul {
+		margin: 0;
+		padding: 0;
+	}
+	#homenotice .homenotice_lists div {
+		height: 24px;
+	}
+
+	#homenotice ul li a {
+		float: left;
+		display: block;
+		overflow: hidden;
+		height: 24px;
+	}
+
+	#homenotice ul li span {
+		float: right;
+		color: #999;
+	}
+	
+	</style>
+		<div class="row m-0">
+	<div class="mb-3 p-2 bg-white col-md-10 col-xs-12" id="homenotice" style="border:1px solid #BCC6C9; border-radius: 3px 0 0 3px;">
+		<!--  中间 -->
+		<div class="row m-0">
+			<div class="font-weight-bold">公告：</div>
+			<div class="col px-0" id="homenoticeBox" style="height: 21px; overflow: hidden;">
+				<div class="row homenotice_lists" style="margin: 0; padding: 0;">
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://bbs.pediy.com/thread-249064.htm">看雪CTF2019防守方征题正在进行时！</a></div>
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://qifu.kanxue.com/">看雪企服项目平台</a></div>
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://bbs.pediy.com/thread-230052.htm">《加密与解密（第4版）》已上市！</a></div>
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://bbs.pediy.com/thread-247710.htm">看雪会员等级体系2018版策略介绍</a></div>
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://bbs.pediy.com/thread-226432.htm">看雪精华合集</a></div>
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://bbs.pediy.com/thread-248796.htm">看雪2019安全开发者峰会议题征集</a></div>
+									</div>
+			
+				<div class="row homenotice_lists" style="margin: 0; padding: 0;">
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://bbs.pediy.com/thread-249064.htm">看雪CTF2019防守方征题正在进行时！</a></div>
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://qifu.kanxue.com/">看雪企服项目平台</a></div>
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://bbs.pediy.com/thread-230052.htm">《加密与解密（第4版）》已上市！</a></div>
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://bbs.pediy.com/thread-247710.htm">看雪会员等级体系2018版策略介绍</a></div>
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://bbs.pediy.com/thread-226432.htm">看雪精华合集</a></div>
+										<div class="col-12 col-md-4" style="white-space: nowrap; overflow: hidden; text-overflow:ellipsis;"><a target="_blank" href="https://bbs.pediy.com/thread-248796.htm">看雪2019安全开发者峰会议题征集</a></div>
+									</div>
+			</div>
+		</div>
+		<!--  中间结束 -->
+	</div>
+	<div class="col-md-2 text-center col-xs-12 signin py-0 mb-3 px-1" style="font-size: 12px; height:37px; line-height:37px; border: 1px solid #BCC6C9; background-color:#f9fcff; cursor: pointer;  border-radius: 0 3px 3px 0; "><img src="./pediy_files/coins.png" style="max-width: 13px;" alt="" srcset=""><span class="">&nbsp;&nbsp;签到奖励</span></div>
+	</div>
+	<div class="row bbs_home_page_contant_div mx-0">
+		<style>
+		#cate_parent .sep {
+			height: 0px;
+			border-bottom: 1px solid #ddd;
+			overflow: hidden;
+			clear: both;
+		}
+
+		#cate_parent>div.sep:last-child {
+			border: 0px;
+		}
+		
+		@media only screen and (max-width: 780px) {
+			#cate_parent>div.sep {
+				border: 0px;
+			}
+		}
+		</style>
+						<div class="card px-0">
+			<div class="card-header">
+				学习园地			</div>
+			<div class="card-body">
+				<div class="row mx-0" id="cate_parent">
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/97.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-97.htm">
+										『求助问答』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">449 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									<img src="./pediy_files/subforum_2_old.gif"><a href="https://bbs.pediy.com/forum-20.htm"><b>『¥付费问答』</b></a><br>
+								</div>
+																								<div class="text-small text-info" style="line-height: 2;">
+								</div>
+																							</dd>
+						</dl>
+					</div>
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/32.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-32.htm">
+										『外文翻译』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">1634 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									国外最新技术、资讯文章翻译								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-733834.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/834/733834.png?1542780215" class="avatar-1">-->
+											CCkicker										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-328.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/328/328.png?1" class="avatar-1">-->
+											zmworm										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-24068.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="view/img/avatar.png" class="avatar-1">-->
+											arhat										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-225617.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/617/225617.png?1" class="avatar-1">-->
+											moonife										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-578992.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/992/578992.png?1" class="avatar-1">-->
+											BDomne										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+					<div class="sep"></div>									</div>
+			</div>
+		</div>
+				<div class="card px-0">
+			<div class="card-header">
+				前沿科技			</div>
+			<div class="card-body">
+				<div class="row mx-0" id="cate_parent">
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/128.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-128.htm">
+										『智能设备』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">970 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									讨论智能设备的应用和技巧。								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-302697.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/697/302697.png?1" class="avatar-1">-->
+											gjden										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/172.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-172.htm">
+										『区块链安全』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">133 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									制约区块链发展的最重要的原因之一是安全问题								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-752.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/752/752.png?1" class="avatar-1">-->
+											海风月影										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-678.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/678/678.png?1546753030" class="avatar-1">-->
+											菩提！										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+					<div class="sep"></div>									</div>
+			</div>
+		</div>
+				<div class="card px-0">
+			<div class="card-header">
+				移动平台			</div>
+			<div class="card-body">
+				<div class="row mx-0" id="cate_parent">
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/161.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-161.htm">
+										『Android安全』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">4526 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									Android系统逆向、对抗、加固、漏洞等								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-318317.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/317/318317.png?1" class="avatar-1">-->
+											Claud										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-223786.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/786/223786.png?1" class="avatar-1">-->
+											非虫										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-444052.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/052/444052.png?1" class="avatar-1">-->
+											MindMac										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-726411.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/411/726411.png?1515772628" class="avatar-1">-->
+											LowRebSwrd										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/166.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-166.htm">
+										『iOS安全』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">797 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									iOS越狱、逆向技术交流								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-581423.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/423/581423.png?1" class="avatar-1">-->
+											roysue										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-28365.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/365/28365.png?1" class="avatar-1">-->
+											zhuliang										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+					<div class="sep"></div>									</div>
+			</div>
+		</div>
+				<div class="card px-0">
+			<div class="card-header">
+				桌面平台			</div>
+			<div class="card-body">
+				<div class="row mx-0" id="cate_parent">
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/4.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-4.htm">
+										『软件逆向』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">30853 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									<img src="./pediy_files/subforum_2_old.gif"><a href="https://bbs.pediy.com/forum-99.htm"><b>《加密与解密(第4版)》</b></a><br>
+18年专注——顶级软件逆向论坛								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-93.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/093/93.png?1" class="avatar-1">-->
+											kanxue										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-189496.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/496/189496.png?1" class="avatar-1">-->
+											mstwugui										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-24467.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/467/24467.png?1" class="avatar-1">-->
+											CCDebuger										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/41.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-41.htm">
+										『编程技术』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">16728 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									Windows系统、安全编程								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-751258.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/258/751258.png?1494846520" class="avatar-1">-->
+											KevinsBobo										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-181595.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/595/181595.png?1" class="avatar-1">-->
+											玩命										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+					<div class="sep"></div>										<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/88.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-88.htm">
+										『加壳脱壳』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">12972 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									壳是一段保护软件不被非法修改或反编译的程序								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-12238.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/238/12238.png?1517577552" class="avatar-1">-->
+											xiaohang										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/132.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-132.htm">
+										『密码算法』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">1954 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									密码学算法在安全方面的应用								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-697893.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/893/697893.png?1546689803" class="avatar-1">-->
+											看场雪										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-4842.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/842/4842.png?1" class="avatar-1">-->
+											cnbragon										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-244702.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/702/244702.png?1" class="avatar-1">-->
+											rockinuk										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-240024.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/024/240024.png?1" class="avatar-1">-->
+											jackozoo										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+					<div class="sep"></div>										<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/150.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-150.htm">
+										『二进制漏洞』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">1495 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									传统的缓冲区溢出、UAF等涉及到二进制编码的漏洞分析								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-162756.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/756/162756.png?1" class="avatar-1">-->
+											仙果										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-387462.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/462/387462.png?1" class="avatar-1">-->
+											wingdbg										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-578992.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/992/578992.png?1" class="avatar-1">-->
+											BDomne										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/10.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-10.htm">
+										『工具下载』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">14460 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									PC平台安全相关的工具或文档资料分享								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-1357.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/357/1357.png?1" class="avatar-1">-->
+											linhanshi										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-546.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/546/546.png?1" class="avatar-1">-->
+											Feisu										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+					<div class="sep"></div>									</div>
+			</div>
+		</div>
+				<div class="card px-0">
+			<div class="card-header">
+				企业建设			</div>
+			<div class="card-body">
+				<div class="row mx-0" id="cate_parent">
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/162.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-162.htm">
+										『业务安全』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">218 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									讨论各类企业业务安全，如反欺诈、威胁情报、羊毛党等，赋能企业安全建设								</div>
+																															</dd>
+						</dl>
+					</div>
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/151.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-151.htm">
+										『WEB安全』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">1020 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									包括XSS、注入等WEB渗透技术交流								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-508937.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/937/508937.png?1" class="avatar-1">-->
+											piaox										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-70493.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/493/70493.png?1" class="avatar-1">-->
+											humourkyo										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-833800.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/800/833800.png?1549002534" class="avatar-1">-->
+											crownless										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+					<div class="sep"></div>									</div>
+			</div>
+		</div>
+				<div class="card px-0">
+			<div class="card-header">
+				看雪CTF			</div>
+			<div class="card-body">
+				<div class="row mx-0" id="cate_parent">
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/37.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-37.htm">
+										『CrackMe』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">4776 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									<img src="./pediy_files/subforum_2_old.gif"><a href="https://bbs.pediy.com/forum-122.htm"><b>『CTF2019提交区(隐藏版块)』</b></a>								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-1424.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/424/1424.png?1" class="avatar-1">-->
+											riijj										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-25444.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/444/25444.png?1" class="avatar-1">-->
+											逍遥风										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-26991.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/991/26991.png?1" class="avatar-1">-->
+											hawking										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-39732.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="view/img/avatar.png" class="avatar-1">-->
+											netwind										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-372322.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/322/372322.png?1" class="avatar-1">-->
+											loongzyd										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/171.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-171.htm">
+										『Pwn』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">161 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									题目思路、比赛经验等分享交流								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-578992.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/992/578992.png?1" class="avatar-1">-->
+											BDomne										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+					<div class="sep"></div>									</div>
+			</div>
+		</div>
+				<div class="card px-0">
+			<div class="card-header">
+				职场生活			</div>
+			<div class="card-body">
+				<div class="row mx-0" id="cate_parent">
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/47.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://job.kanxue.com/">
+										『招聘专区』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">2730 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									千金易得，贤才难觅!  <a href="https://bbs.pediy.com/forum-47.htm"><b>旧版本招聘</b></a>								</div>
+																								<div class="text-small text-info" style="line-height: 2;">
+								</div>
+																							</dd>
+						</dl>
+					</div>
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/137.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-137.htm">
+										『职业生涯』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">427 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									走过的路，交过的朋友								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-93.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/093/93.png?1" class="avatar-1">-->
+											kanxue										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+					<div class="sep"></div>										<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/45.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-45.htm">
+										『茶余饭后』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">12027 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									看雪学院官方QQ群：953174865，添加时请备注看雪论坛“昵称（用户名）”，否则验证不通过。								</div>
+																																<div style="line-height: 1"><span class="text-grey text-small">版主：</span>
+																			<a href="https://bbs.pediy.com/user-733834.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/834/733834.png?1542780215" class="avatar-1">-->
+											CCkicker										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-3.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/003/3.png?1492684713" class="avatar-1">-->
+											admin										</a> &nbsp;
+																			<a href="https://bbs.pediy.com/user-169205.htm" class="text-grey text-nowrap text-small">
+											<!--<img src="//passport.kanxue.com/upload/avatar/205/169205.png?1" class="avatar-1">-->
+											stalker										</a> &nbsp;
+																	</div>
+															</dd>
+						</dl>
+					</div>
+														</div>
+			</div>
+		</div>
+				<div class="card px-0">
+			<div class="card-header">
+				站务管理/产品			</div>
+			<div class="card-body">
+				<div class="row mx-0" id="cate_parent">
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/2.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-2.htm">
+										『论坛版务』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">1267 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									<img src="./pediy_files/subforum_2_old.gif"><a href="https://bbs.pediy.com/forum-78.htm"><b>『申请提交区』</b></a><br>
+<img src="./pediy_files/subforum_2_old.gif"><a href="https://bbs.pediy.com/forum-29.htm"><b>『论坛管理团队』</b></a>
+								</div>
+																															</dd>
+						</dl>
+					</div>
+															<div class="col-md-6 cate" style="margin: 0.5rem 0rem;">
+						<dl class="row">
+							<dt style="width: 68px" class="vtop">
+								<img src="./pediy_files/65.png" class="forum_icon">
+							</dt>
+							<dd class="vtop">
+								<div>
+									
+									<a style="font-size: 14px;" class="font-weight-bold" href="https://bbs.pediy.com/forum-65.htm">
+										『图书项目』									</a>
+									
+									<span class="text-small"><span class="text-grey">主题：</span><b class="text-muted">250 </b></span>
+								</div>
+																<div class="text-small text-muted my-1" style="line-height: 1.5;">
+									<img src="./pediy_files/subforum_2_old.gif"><a href="https://bbs.pediy.com/forum-99.htm"><b>《加密与解密(第4版)》</b></a>								</div>
+																															</dd>
+						</dl>
+					</div>
+					<div class="sep"></div>									</div>
+			</div>
+		</div>
+						<div class="col-12 col-md-12 hidden-sm hidden-md" style="padding-left:0px;padding-right:0px;">
+			<div class="card">
+				<div class="card-body" style="padding:0px;">
+					<div style="padding: 0;background:#0099ee;width: 80px;height:30px;line-height: 30px;font-size: 12px;font-weight: normal;color: #ffffff;text-align: center;float: left;left: 0;z-index: 2000;" class="text-center">
+						<i class="icon-users" aria-hidden="true"></i>&nbsp;
+						4040&nbsp;人</div>
+					<div id="scroll_div" class="scroll_div" style="width:calc(100% - 80px); float:right;height:30px;margin:0 auto; overflow: hidden; white-space:nowrap; background:#fff">
+						<marquee scrolldelay="50" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()" style="line-height:30px;height:30px;" id="marquee">
+														<a href="https://bbs.pediy.com/user-599266.htm" class="small">
+								VCKFC<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-775782.htm" class="small">
+								wx_fades<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-706309.htm" class="small">
+								月落之汀<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-602912.htm" class="small">
+								雪衫<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-544617.htm" class="small">
+								萌克力<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-253197.htm" class="small">
+								dragonthre<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-745774.htm" class="small">
+								厉害了我的谁<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-760712.htm" class="small">
+								生命练习生<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-715281.htm" class="small">
+								goldengod<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-785594.htm" class="small">
+								wx_糯叽叽<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-86970.htm" class="small">
+								coolwxd<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-592710.htm" class="small">
+								undefuser<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-672657.htm" class="small">
+								DCO<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-382330.htm" class="small">
+								fdassd<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-636601.htm" class="small">
+								cb彬<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-30415.htm" class="small">
+								asd<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-759951.htm" class="small">
+								陌殇<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-762290.htm" class="small">
+								wx_<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-847986.htm" class="small">
+								我帅的男人<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851348.htm" class="small">
+								wx_恒_201<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-107679.htm" class="small">
+								Anplando<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-665058.htm" class="small">
+								Lakitu<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-422721.htm" class="small">
+								暗夜魔尊<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-717584.htm" class="small">
+								jsajsajsa<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-167986.htm" class="small">
+								Alfik<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-425513.htm" class="small">
+								MaYil<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-833057.htm" class="small">
+								鬼手_277636<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-809712.htm" class="small">
+								AykEpt<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-777812.htm" class="small">
+								YZJClear<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-587945.htm" class="small">
+								細細粒<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-596950.htm" class="small">
+								tuhanlong<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-803510.htm" class="small">
+								amzilun<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-577077.htm" class="small">
+								MTRush<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-6956.htm" class="small">
+								wsc<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-744000.htm" class="small">
+								禾之舟<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-839558.htm" class="small">
+								zpob<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-618676.htm" class="small">
+								adslpo<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-761137.htm" class="small">
+								wx_惑者无语<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-750476.htm" class="small">
+								PeterZheng<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-236762.htm" class="small">
+								Editor<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-93.htm" class="small">
+								kanxue<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-640903.htm" class="small">
+								Thead<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-246073.htm" class="small">
+								a泪痕<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-793608.htm" class="small">
+								likte<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-3018.htm" class="small">
+								eausky<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-624198.htm" class="small">
+								淡淡的荧光<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-705732.htm" class="small">
+								petrichor<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-401640.htm" class="small">
+								无脸男<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-850910.htm" class="small">
+								mb_vtpihrim<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-363867.htm" class="small">
+								SANCDAYE<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-784475.htm" class="small">
+								厌倦<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-846863.htm" class="small">
+								小孟dream<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-411900.htm" class="small">
+								ythalbert<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851271.htm" class="small">
+								wx_εε<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-756791.htm" class="small">
+								Buu<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-704230.htm" class="small">
+								茅山小僧<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-781169.htm" class="small">
+								wx_江河<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-818906.htm" class="small">
+								Adench<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-201325.htm" class="small">
+								qqwawzymu<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-173439.htm" class="small">
+								lewic<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-96374.htm" class="small">
+								fengdaolon<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-846934.htm" class="small">
+								绿盟科技<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-749864.htm" class="small">
+								demoLin<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-624619.htm" class="small">
+								ifyou<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-768930.htm" class="small">
+								欧阳brother<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-838537.htm" class="small">
+								lcookie<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-838731.htm" class="small">
+								SunnySmart<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-231176.htm" class="small">
+								joker陈<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-795298.htm" class="small">
+								一滴泪<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-705490.htm" class="small">
+								大只狼<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-733834.htm" class="small">
+								CCkicker<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-382627.htm" class="small">
+								hkzjms<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-761114.htm" class="small">
+								力霸天<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-848602.htm" class="small">
+								largek<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-775451.htm" class="small">
+								wooLucius<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-654094.htm" class="small">
+								唐tianlong<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851216.htm" class="small">
+								C  学习中<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-750054.htm" class="small">
+								希望小雏鸟<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-565256.htm" class="small">
+								snowflakes<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-717463.htm" class="small">
+								Fick<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-596735.htm" class="small">
+								Seven的怀念<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-799673.htm" class="small">
+								安络CNNS<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-682195.htm" class="small">
+								blue陈<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-579848.htm" class="small">
+								Explorerl<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851386.htm" class="small">
+								mb_rpacuuef<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-675677.htm" class="small">
+								坑大<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851382.htm" class="small">
+								weiyii<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-738206.htm" class="small">
+								脚本小子X<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-759256.htm" class="small">
+								xiaxiansheng<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-383488.htm" class="small">
+								JoenChen<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-773532.htm" class="small">
+								andxx<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-337154.htm" class="small">
+								zjjhszs<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-565245.htm" class="small">
+								Protected<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-646194.htm" class="small">
+								iiksp<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-832953.htm" class="small">
+								kouhongmall<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-163361.htm" class="small">
+								风随雨行<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-768215.htm" class="small">
+								狗儿的朋友<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-614216.htm" class="small">
+								Archar<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-792459.htm" class="small">
+								Dawnsec<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-833357.htm" class="small">
+								糖醋小牌<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-309320.htm" class="small">
+								一学徒工<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-846503.htm" class="small">
+								spdfdfer<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-57632.htm" class="small">
+								sudami<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-703101.htm" class="small">
+								zshiy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-850019.htm" class="small">
+								--冷山___<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-572364.htm" class="small">
+								不对<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-587203.htm" class="small">
+								万抽抽<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-838857.htm" class="small">
+								chenshirui<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-613694.htm" class="small">
+								胡一米<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-658134.htm" class="small">
+								刘铠文<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-564634.htm" class="small">
+								yuzibo<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-817908.htm" class="small">
+								沐安<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-348145.htm" class="small">
+								diasstudy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-735811.htm" class="small">
+								ezrealik<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-711104.htm" class="small">
+								王叔叔<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-811934.htm" class="small">
+								此恨不关风月<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-719075.htm" class="small">
+								zhousilai<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-454757.htm" class="small">
+								DebugGirls<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-302915.htm" class="small">
+								sky东<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-815487.htm" class="small">
+								十一有点呆<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-345365.htm" class="small">
+								xibijj<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-608025.htm" class="small">
+								尐进<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-250063.htm" class="small">
+								chmlqw<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-757012.htm" class="small">
+								冰雪冬樱<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-581423.htm" class="small">
+								roysue<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851379.htm" class="small">
+								mb_afelhmqw<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-850240.htm" class="small">
+								yydtte<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-423321.htm" class="small">
+								Kael<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-338613.htm" class="small">
+								逆水寻舟<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-156187.htm" class="small">
+								angelocai<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-245444.htm" class="small">
+								yezhulove<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-243345.htm" class="small">
+								keulraesik<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-750718.htm" class="small">
+								zjgcjy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-688379.htm" class="small">
+								夜声人静<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-746644.htm" class="small">
+								臭小鸭<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-585205.htm" class="small">
+								黑手鱼<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-618286.htm" class="small">
+								金奔腾<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-718863.htm" class="small">
+								世人谓我<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-679760.htm" class="small">
+								xxRea<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-99882.htm" class="small">
+								xiaofu<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-843621.htm" class="small">
+								啊烧地卧企鹅<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-783210.htm" class="small">
+								三十二变<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-604102.htm" class="small">
+								hongde<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-847178.htm" class="small">
+								yazigegeda<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-823429.htm" class="small">
+								irayray<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-789425.htm" class="small">
+								Aldrin<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-599215.htm" class="small">
+								whitelen<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-775009.htm" class="small">
+								风尘仆仆<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-601978.htm" class="small">
+								顽劣<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-549967.htm" class="small">
+								davidangle<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-587311.htm" class="small">
+								nevinhappy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-706368.htm" class="small">
+								ASPLC<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-259017.htm" class="small">
+								yy大雄<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-136548.htm" class="small">
+								dayang<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-758355.htm" class="small">
+								wizdzz<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-813260.htm" class="small">
+								Kuroiko<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-749716.htm" class="small">
+								Oday小斯<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-840939.htm" class="small">
+								一生热爱<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-469724.htm" class="small">
+								Lnairan<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-741716.htm" class="small">
+								BkHumor<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-293945.htm" class="small">
+								abelwy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-618835.htm" class="small">
+								gsxiaoxiao<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-706566.htm" class="small">
+								伟叔叔<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-839310.htm" class="small">
+								jnhfw<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-123950.htm" class="small">
+								小龙飞<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-747426.htm" class="small">
+								管她那么多<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-834262.htm" class="small">
+								敏而好学<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-557458.htm" class="small">
+								sqdebug<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-831356.htm" class="small">
+								MoonU<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-821014.htm" class="small">
+								老skr江<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-183148.htm" class="small">
+								iceway<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-597552.htm" class="small">
+								yirucandy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-15310.htm" class="small">
+								sisess<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-676308.htm" class="small">
+								laoha<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-56685.htm" class="small">
+								Troy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-612504.htm" class="small">
+								帝星捧月<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-738480.htm" class="small">
+								吴限<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-1117.htm" class="small">
+								superdos<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-780155.htm" class="small">
+								hasking<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-587120.htm" class="small">
+								StriveXjun<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-838033.htm" class="small">
+								Jack_218887<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-678489.htm" class="small">
+								菜鸟学术<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-47280.htm" class="small">
+								上网鱼<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-773514.htm" class="small">
+								DeeLMind<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-659318.htm" class="small">
+								venidic<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-774125.htm" class="small">
+								呐呐<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-782575.htm" class="small">
+								wx_YUMI<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-755181.htm" class="small">
+								dx苹果的心愿<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-850856.htm" class="small">
+								Eva寻<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-774936.htm" class="small">
+								ilyzqe<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-802512.htm" class="small">
+								风云一笑_864720<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851377.htm" class="small">
+								wx_拼命挣幸福<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-594887.htm" class="small">
+								南宫蜂王<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-560933.htm" class="small">
+								猫子<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-162380.htm" class="small">
+								bboyiori<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-642281.htm" class="small">
+								Catsay<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-682449.htm" class="small">
+								FraMeQ<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-560216.htm" class="small">
+								黑犬黑犬<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-377240.htm" class="small">
+								wangzehua<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-181642.htm" class="small">
+								yunsini<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851359.htm" class="small">
+								shepherd-H<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-244700.htm" class="small">
+								lbsoar<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-661726.htm" class="small">
+								loveqiao<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-706599.htm" class="small">
+								不知世事<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-584566.htm" class="small">
+								xycxmz<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-21080.htm" class="small">
+								whydbg<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-849789.htm" class="small">
+								偉龍軟件工作室<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-578047.htm" class="small">
+								雪MFC<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-748484.htm" class="small">
+								计算机蚱蜢<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-12238.htm" class="small">
+								xiaohang<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-850688.htm" class="small">
+								luokekeluo<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-846716.htm" class="small">
+								大树_777119<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-362942.htm" class="small">
+								skywhite<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-846942.htm" class="small">
+								Dolores<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-558096.htm" class="small">
+								青庭<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-780102.htm" class="small">
+								AtLarge<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-415064.htm" class="small">
+								hlowkey<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-623978.htm" class="small">
+								nnezyj<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-734964.htm" class="small">
+								YAChongc<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-734571.htm" class="small">
+								houjingyi<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-730082.htm" class="small">
+								KxNTN<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-206451.htm" class="small">
+								alexone<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-649402.htm" class="small">
+								loverightz<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-682762.htm" class="small">
+								Akkuman<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-603227.htm" class="small">
+								安于此生<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-478913.htm" class="small">
+								wonderzdh<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-548459.htm" class="small">
+								Imyang<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-744193.htm" class="small">
+								khfrefhewhfl<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-845328.htm" class="small">
+								ryx<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-850401.htm" class="small">
+								Amun<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-129368.htm" class="small">
+								misanbai<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-705584.htm" class="small">
+								小白白xx<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-844169.htm" class="small">
+								钟ky<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-782787.htm" class="small">
+								bjtwokeight<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-849075.htm" class="small">
+								killerquin<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-24247.htm" class="small">
+								dngs<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-803763.htm" class="small">
+								BlackJZero<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-816328.htm" class="small">
+								深圳Autel<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-611549.htm" class="small">
+								lzlichun<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-135238.htm" class="small">
+								netwolfer<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-307877.htm" class="small">
+								Genes<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-772247.htm" class="small">
+								一首凉凉送给<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-675906.htm" class="small">
+								sherrydl<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-798171.htm" class="small">
+								wx_kx57941<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-596636.htm" class="small">
+								fengwuhui<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-790197.htm" class="small">
+								xEnd<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-125137.htm" class="small">
+								nekaxi<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-674527.htm" class="small">
+								tos陈<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-818167.htm" class="small">
+								Komorebii<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-212493.htm" class="small">
+								KooJiSung<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-658300.htm" class="small">
+								blueskylan<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-592728.htm" class="small">
+								二娃<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-694356.htm" class="small">
+								zeroghost<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-752822.htm" class="small">
+								莲子荷花<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-846471.htm" class="small">
+								红桃<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-749355.htm" class="small">
+								stuhkg<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-189262.htm" class="small">
+								godqs<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-385739.htm" class="small">
+								网络枭红<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-549484.htm" class="small">
+								gabpfiugdu<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-378999.htm" class="small">
+								小西瓜皮<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851384.htm" class="small">
+								TrojanC<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-837199.htm" class="small">
+								嘿哈哈han<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-130770.htm" class="small">
+								ptcql<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-838873.htm" class="small">
+								Orange_187041<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-169988.htm" class="small">
+								iammengbao<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-452873.htm" class="small">
+								ratmyy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-807699.htm" class="small">
+								油条可以吃<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-844909.htm" class="small">
+								kxLC<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-160517.htm" class="small">
+								shizp<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-121307.htm" class="small">
+								没有姓名<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-725783.htm" class="small">
+								Donoy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-652020.htm" class="small">
+								wu形之刃<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-74190.htm" class="small">
+								Cho<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-730610.htm" class="small">
+								心许雪<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-832945.htm" class="small">
+								美团SRC<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-747296.htm" class="small">
+								FaEry<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-786350.htm" class="small">
+								xiaohucode<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-716193.htm" class="small">
+								junkboy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-790159.htm" class="small">
+								执小念<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-599721.htm" class="small">
+								hiccup<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-844109.htm" class="small">
+								小七ya<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-775837.htm" class="small">
+								往哪看呢<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-391233.htm" class="small">
+								zhengqwe<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-649597.htm" class="small">
+								TopC<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-157504.htm" class="small">
+								mrwlw<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-850855.htm" class="small">
+								大学-生活好<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-794256.htm" class="small">
+								疯狂的骑士<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-709510.htm" class="small">
+								im柯南<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-767153.htm" class="small">
+								漆寒<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-542701.htm" class="small">
+								魅叉<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-809626.htm" class="small">
+								CatGames<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-443750.htm" class="small">
+								FindCall<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-161003.htm" class="small">
+								qslljm<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-321344.htm" class="small">
+								阮光全<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-757977.htm" class="small">
+								wx_LU-S<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-847157.htm" class="small">
+								胡八一<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-846505.htm" class="small">
+								sp小不不<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851383.htm" class="small">
+								mb_hgcjgkft<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-762903.htm" class="small">
+								killlik<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-177189.htm" class="small">
+								cdty<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-671556.htm" class="small">
+								会飞的锅<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-849192.htm" class="small">
+								NoHeart<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-847687.htm" class="small">
+								CodeLy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-725968.htm" class="small">
+								青峰s<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-746247.htm" class="small">
+								XiZiRuMeng<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-728328.htm" class="small">
+								仰星者<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-818441.htm" class="small">
+								accessdenied<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-3675.htm" class="small">
+								SnowFox<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-797084.htm" class="small">
+								menertry<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-753386.htm" class="small">
+								peekl<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-178594.htm" class="small">
+								xumn<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-257604.htm" class="small">
+								agagagag<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-606533.htm" class="small">
+								xiaopengf<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851376.htm" class="small">
+								菜鸟123456<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-738211.htm" class="small">
+								低手莫怪<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-753554.htm" class="small">
+								fawcgzmg<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851324.htm" class="small">
+								jiayishu<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-19104.htm" class="small">
+								idshisha<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-664591.htm" class="small">
+								mldny<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-731498.htm" class="small">
+								piapia<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-846735.htm" class="small">
+								nightRainy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-729424.htm" class="small">
+								JuicyBoy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-387898.htm" class="small">
+								向量<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-40116.htm" class="small">
+								lixing<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-800208.htm" class="small">
+								Giftia<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-775251.htm" class="small">
+								chased<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-662073.htm" class="small">
+								zjhkx学院<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-108202.htm" class="small">
+								stoy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-103709.htm" class="small">
+								XSJS<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-657395.htm" class="small">
+								glider菜鸟<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-529474.htm" class="small">
+								无边<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-481597.htm" class="small">
+								hcsmq<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-763901.htm" class="small">
+								Anythin勾<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851309.htm" class="small">
+								wx_AsakuraYoh<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-416920.htm" class="small">
+								Goly<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-841123.htm" class="small">
+								疯狂的闹钟<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851367.htm" class="small">
+								wx_虚幻灵者<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-760920.htm" class="small">
+								Vn小帆<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-10400.htm" class="small">
+								prik<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-846835.htm" class="small">
+								第一视角<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-681313.htm" class="small">
+								mknanren<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-833997.htm" class="small">
+								Saric<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-927.htm" class="small">
+								bigcat217<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-837963.htm" class="small">
+								赛飞<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-818314.htm" class="small">
+								dwflare<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-616905.htm" class="small">
+								kizuna<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-830711.htm" class="small">
+								moSuiChen<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-546853.htm" class="small">
+								chinajszfz<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-848841.htm" class="small">
+								黄岛主是也<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-409365.htm" class="small">
+								artake<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-845157.htm" class="small">
+								KanXuerr<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-447100.htm" class="small">
+								rleft<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-283843.htm" class="small">
+								Phenmod<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851111.htm" class="small">
+								xuanzee<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-5083.htm" class="small">
+								TeLeMan<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-784580.htm" class="small">
+								CZEROF<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851381.htm" class="small">
+								wx_少年_797<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-805252.htm" class="small">
+								hhkqqs<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-615441.htm" class="small">
+								黑洛<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-836008.htm" class="small">
+								吃瓜网友<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-840528.htm" class="small">
+								邓dg<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-773270.htm" class="small">
+								wx_kevin_583366<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-735473.htm" class="small">
+								RorschachL<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-345847.htm" class="small">
+								嗨喽<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-620204.htm" class="small">
+								jltxgcy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-223965.htm" class="small">
+								conquereo<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-752769.htm" class="small">
+								jione<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-238622.htm" class="small">
+								mafengko<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-672082.htm" class="small">
+								gezigezao<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-777457.htm" class="small">
+								老弟来了<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851230.htm" class="small">
+								wx_浩南哥<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-330651.htm" class="small">
+								jackqk<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-765834.htm" class="small">
+								书生怕怕<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-746527.htm" class="small">
+								FANTASYING<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851302.htm" class="small">
+								mb_jkyavfig<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-652616.htm" class="small">
+								nullddd<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851358.htm" class="small">
+								gy21<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851380.htm" class="small">
+								mb_evjjatwo<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-749597.htm" class="small">
+								八岛<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-668538.htm" class="small">
+								病毒小子<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-45786.htm" class="small">
+								eriks<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-849586.htm" class="small">
+								baobaopaul<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-848638.htm" class="small">
+								梦听惊雷<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-775287.htm" class="small">
+								时光与梦s<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-176799.htm" class="small">
+								glyes<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-836812.htm" class="small">
+								wolaitest<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-555057.htm" class="small">
+								liudongdon<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-346783.htm" class="small">
+								gtict<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-703263.htm" class="small">
+								sudozhange<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-86983.htm" class="small">
+								hmilywen<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-764371.htm" class="small">
+								陆志健<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-147123.htm" class="small">
+								gushiaoke<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-849623.htm" class="small">
+								无极Mi<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851375.htm" class="small">
+								wx_doubi<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-40451.htm" class="small">
+								kingdog<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-773490.htm" class="small">
+								最弱的萌新<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-633284.htm" class="small">
+								icycityone<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-850936.htm" class="small">
+								wx_H_699<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-847669.htm" class="small">
+								rookie江<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-7267.htm" class="small">
+								jgs<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-706660.htm" class="small">
+								枯藤舍<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851378.htm" class="small">
+								wx_、_754<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-824584.htm" class="small">
+								SL时<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-756210.htm" class="small">
+								kanxuexxx<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-844348.htm" class="small">
+								&nbsp;_515548<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-100411.htm" class="small">
+								疯子<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-847386.htm" class="small">
+								rookie鱼<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-784662.htm" class="small">
+								暗黑之夜<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-848873.htm" class="small">
+								RodYang<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-821538.htm" class="small">
+								时代过客abc<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-56029.htm" class="small">
+								qqrate<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-686320.htm" class="small">
+								骨灰小旺<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-319118.htm" class="small">
+								bambooqj<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-500585.htm" class="small">
+								weishi<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-693344.htm" class="small">
+								smartdon<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-121407.htm" class="small">
+								Ethernet<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-850268.htm" class="small">
+								我叫MD<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-829932.htm" class="small">
+								Young Sheng<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-813885.htm" class="small">
+								WanPJ<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-540821.htm" class="small">
+								woodnaonly<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-845899.htm" class="small">
+								Wika<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-305290.htm" class="small">
+								lofrank<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-9602.htm" class="small">
+								meilin<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-406343.htm" class="small">
+								BufferMe<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-301937.htm" class="small">
+								demoscene<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-843667.htm" class="small">
+								cowpeas<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-477799.htm" class="small">
+								霏霏哥<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-14494.htm" class="small">
+								ssarg<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-824999.htm" class="small">
+								懦夫救星<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-428508.htm" class="small">
+								小宝来了<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-841720.htm" class="small">
+								甲仑<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851364.htm" class="small">
+								Ecin<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-818026.htm" class="small">
+								jiaduo<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-236791.htm" class="small">
+								鸡蛋面<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-761543.htm" class="small">
+								黑羽re<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-653896.htm" class="small">
+								sandboxie<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-332333.htm" class="small">
+								xujintian<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-77411.htm" class="small">
+								zzage<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-718635.htm" class="small">
+								supperlitt<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-849900.htm" class="small">
+								kirito三无<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-799228.htm" class="small">
+								myeyez<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-715719.htm" class="small">
+								gaoan<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-24823.htm" class="small">
+								wsgtrsys<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-761725.htm" class="small">
+								德罗巴<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-99564.htm" class="small">
+								tomahawk<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-271606.htm" class="small">
+								lanyuo<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-726411.htm" class="small">
+								LowRebSwrd<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-182756.htm" class="small">
+								bluesming<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-764.htm" class="small">
+								poppig<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-820512.htm" class="small">
+								弄啥呢<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-5731.htm" class="small">
+								xf3087<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-798964.htm" class="small">
+								一只猪儿虫<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-753617.htm" class="small">
+								zakailynn<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-156246.htm" class="small">
+								lzqdkx<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-687336.htm" class="small">
+								笑对VS人生<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-770233.htm" class="small">
+								wx_哈哈哈<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-588849.htm" class="small">
+								zealrains<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-458799.htm" class="small">
+								liysman<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-849838.htm" class="small">
+								WindStormy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-667827.htm" class="small">
+								菜鸟也想飞<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-652950.htm" class="small">
+								longpoxin<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-753288.htm" class="small">
+								samohyes<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-13485.htm" class="small">
+								liutao_2002<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-799686.htm" class="small">
+								zuotte<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-656764.htm" class="small">
+								caihaonan<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-571409.htm" class="small">
+								gugubupt<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-738504.htm" class="small">
+								charlie莉<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-851363.htm" class="small">
+								mb_nwxokker<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-768025.htm" class="small">
+								woiaq<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-837673.htm" class="small">
+								用户已经存在<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-221555.htm" class="small">
+								powerpcer<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-175686.htm" class="small">
+								ncsi<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-790068.htm" class="small">
+								vmtest<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-758533.htm" class="small">
+								szfy<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-762208.htm" class="small">
+								怪盗熊吉<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-53326.htm" class="small">
+								abus<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-500351.htm" class="small">
+								samshine<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-848910.htm" class="small">
+								h九门提督<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-591327.htm" class="small">
+								obabydbg<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-789416.htm" class="small">
+								wx_若<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-775017.htm" class="small">
+								三只跳蚤<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-850876.htm" class="small">
+								iamsomebady<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-848513.htm" class="small">
+								tianhuojun<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-644645.htm" class="small">
+								lovehuai<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-382999.htm" class="small">
+								crackJ<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-766159.htm" class="small">
+								seandong<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-847647.htm" class="small">
+								cjnswl<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-666615.htm" class="small">
+								gqfjob<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-799904.htm" class="small">
+								新user<b>,</b></a>
+														<a href="https://bbs.pediy.com/user-769539.htm" class="small">
+								xflangzi<b>,</b></a>
+													</marquee>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div class="row mx-0 bbs_footer_at_column mt-3 mb-3 hidden-sm hidden-md" style="text-align: center; height: 76px;">
+		<div class="col-md-6 px-0" style="height: 100%;">
+			<a href="http://www.ijiami.cn/" style="height: 100%;" target="_blank">
+				<p></p>
+				<img src="./pediy_files/aijiami.jpg" width="100%" height="100%">
+			</a>
+		</div>
+		<div class="col-md-6 px-0" style="height: 100%;">
+			<a href="https://bbs.pediy.com/thread-248796.htm" style="height: 100%;" target="_blank">
+				<p></p>
+				<img src="./pediy_files/gg2.jpg" width="100%" height="100%">
+			</a>
+		</div>
+	</div>
+	
+	
+		
+		</div>
+
+	</main>
+
+	
+	<footer id="footer" style="background: #3b4348; color: #9ba4aa; height: auto;">
+		<div class="container">
+			<div class="row text-muted small my-3 mx-0" id="web_base_company_information">
+				<div class="col-md-6">
+					©2000-2019 看雪学院 | Based on <a href="http://bbs.xiuno.com/" target="_blank" class="text-muted">Xiuno BBS</a> <br>
+					域名：<a href="https://www.yunaq.com/" target="_blank" class="text-muted">加速乐</a> | 
+					SSL证书：<a href="https://www.trustasia.com/trustasia" target="_blank" class="text-muted">亚洲诚信</a> | 
+					<a href="http://dun.163.com/?from=kanxue_DDoS_2018&amp;hmsr=kanxue%C2%A0" target="_blank" class="text-muted">安全网易云易盾</a>
+					<span class="hidden-sm"> | 公众号：ikanxue</span> 
+				</div>
+				<div class="col-md-6 text-right d-none d-md-block">
+					<a class="text-muted" href="https://zhuanlan.kanxue.com/article-56.htm">关于我们</a> | 
+					<a class="text-muted" href="https://www.kanxue.com/user-online_sendmsg.htm">联系我们</a> | 
+					<a href="https://zhuanlan.kanxue.com/article-1.htm" class="text-muted">企业服务</a> <br>
+					Processed: <b>0.104</b>s, SQL: <b>14</b> / 京ICP备10040895号-17
+				</div>
+			</div>
+			<div style="max-height: 100px; overflow-y:auto;">
+							</div>
+		</div>
+	</footer>
+	
+
+
+	<!--[if lt IE 9]>
+	<script>window.location = 'browser.htm';</script>
+	<![endif]-->
+
+
+	
+
+	<div class="act_go_top" style="position: fixed; bottom: 80px; right: 10px; width: 70px; height: 70px; display: none;">
+	<a href="javascript:void(0);" style="width: 70px; height: 70px; display: inline-block;background: url(/view/img/scroll_top.png) no-repeat; _background: url(/view/img/scroll_top.png) no-repeat; outline: none;" title="返回顶部"></a>
+	</div>
+
+
+
+
+<script src="./pediy_files/bbs.js.下载"></script>
+<script src="./pediy_files/jquery-3.1.0.js.下载"></script>
+<script src="./pediy_files/popper.js.下载"></script>
+<script src="./pediy_files/bootstrap.js.下载"></script>
+<script src="./pediy_files/xiuno.js.下载"></script>
+<script src="./pediy_files/storagePlus.js.下载"></script>
+<script src="./pediy_files/bootstrap-plugin.js.下载"></script><script language="javascript" src="./pediy_files/layer.js.下载"></script>
+<script src="./pediy_files/async.js.下载"></script>
+<script src="./pediy_files/form.js.下载"></script>
+
+<script>
+// 用于个人中心 判断路由 center ，还是 pm
+var sele_route = 'index';
+var sele_action = '';
+
+var debug = DEBUG = 0;
+var url_rewrite_on = 1;
+var forumarr = {
+    "4": "『软件逆向』",
+    "52": "OllyDbg插件收集区",
+    "69": "『经典问答』",
+    "102": "『科锐培训』",
+    "141": "CrackMe存档区",
+    "152": "学习园地",
+    "2": "『论坛版务』",
+    "53": "IDA Pro插件收集区",
+    "76": "1)珠海金山2007逆向分析挑战",
+    "99": "《加密与解密(第4版)》",
+    "169": "『15PB培训』",
+    "125": "奇虎360软件安全大赛答案提交区",
+    "128": "『智能设备』",
+    "21": "《软件加密技术内幕》",
+    "68": "2)PEDIY Crackme竞",
+    "41": "『编程技术』",
+    "79": "前沿科技",
+    "95": "《0day:软件漏洞分析技术》",
+    "160": "『麦洛科菲培训』",
+    "161": "『Android安全』",
+    "166": "『iOS安全』",
+    "88": "『加壳脱壳』",
+    "91": "3)看雪论坛2008 Explo",
+    "158": "移动平台",
+    "3": "桌面平台",
+    "120": "4)腾讯公司2008软件安全竞赛",
+    "132": "『密码算法』",
+    "123": "《微软.NET程序的加密与解密》",
+    "127": "5)奇虎360软件安全比赛",
+    "37": "『CrackMe』",
+    "140": "6)PEDIY Crackme竞",
+    "108": "企业建设",
+    "65": "『图书项目』",
+    "150": "『二进制漏洞』",
+    "163": "《C++反汇编与逆向分析技术》",
+    "10": "『工具下载』",
+    "116": "看雪CTF",
+    "155": "8)腾讯公司2010软件安全竞赛",
+    "168": "《Android安全与逆向分析》",
+    "157": "9)2011 Exploit M",
+    "121": "11）移动安全挑战赛（MSC）",
+    "129": "12）2015第2届移动安全挑战",
+    "136": "职场生活",
+    "47": "『招聘专区』",
+    "1": "站务管理/产品",
+    "97": "『求助问答』",
+    "137": "『职业生涯』",
+    "171": "『Pwn』",
+    "20": "『¥付费问答』",
+    "45": "『茶余饭后』",
+    "162": "『业务安全』",
+    "32": "『外文翻译』",
+    "151": "『WEB安全』",
+    "172": "『区块链安全』"
+};
+var fid = 0;
+var uid = 0;
+var gid = 0;
+$('[data-toggle="tooltip"]').tooltip();
+$('#search_form > input').on('click', function() {
+	return false;
+});
+</script>
+
+<script src="./pediy_files/bbs.js(1).下载"></script>
+
+<script>
+// 版主管理：精华
+$('.mod-button button.digest').on('click', function() {
+	var modtid = $('input[name="modtid"]').checked();
+	if(modtid.length == 0) return $.alert(lang.please_choose_thread);
+	var radios = xn.form_radio('digest', {"0": "取消精华", "1": "关注","2": "优秀", "3": "精华"});
+	$.confirm("设置主题为精华", function() {
+		var tids = xn.implode('_', modtid);
+		var digest = $('input[name="digest"]').checked();
+		var postdata = {digest: digest};
+		$.xpost(xn.url('mod-digest-'+tids), postdata, function(code, message) {
+			if(code != 0) return $.alert(message);
+			$.alert(message).delay(1000).location('');
+		});
+	}, {'body': '<p>'+"精华等级"+'：'+radios+'</p>'});
+})
+</script><script>
+function xn_read_unread(tids, tid) {
+	
+	// 当前时间
+	var time = xn.time();
+	
+	// 多长时间内的主题为最新主题
+	var time_range = 86400 * 3;
+	
+	// 三天内的 tids
+	var recent_tids = $.pdata('recent_tids') || {};
+	
+	// 已读的 tids
+	var view_tids = $.pdata('view_tids') || {};
+	// 提取列表页的 tid
+	function fetch_recent_tids(tids) {
+		var changed = false;
+		$.each(tids, function(tid, last_date) {
+			if(time - last_date < time_range) {
+				recent_tids[tid] = last_date;
+				changed = true;
+			}
+		});
+		if(changed) $.pdata('recent_tids', recent_tids);
+	}
+	
+	// 清理最近的 tid
+	function gc_recent_tids() {
+		var changed = false;
+		$.each(recent_tids, function(tid, last_date) {
+			if(time - last_date > time_range) {
+				delete recent_tids[tid];
+				changed = true;
+			}
+		});
+		if(changed) $.pdata('recent_tids', recent_tids);
+	}
+	
+	function gc_view_tids() {
+		var changed = false;
+		$.each(view_tids, function(tid, last_date) {
+			if(!recent_tids[tid]) {
+				delete view_tids[tid];
+				changed = true;
+			}
+		});
+		if(changed) $.pdata('view_tids', view_tids);
+	}
+	
+	function save_view_tid(tid) {
+		if(!recent_tids[tid]) return;
+		view_tids[tid] = time;
+		$.pdata('view_tids', view_tids);
+	}
+	
+	if(tids) {
+		fetch_recent_tids(tids);
+		gc_recent_tids();
+		//gc_view_tids();
+	}
+	if(tid) save_view_tid(tid);
+	
+	// 三天内的主题标记为已读
+	
+	// 遍历主题列表，标记最近的，并且未读的为加粗
+
+	$('.thread').each(function() {
+		var jthis = $(this);
+		var tid = jthis.attr('tid') || jthis.data('tid');
+		if(recent_tids[tid] && recent_tids[tid] > xn.intval(view_tids[tid])) {
+			//jthis.find('div.subject').addClass('font-weight-bold');
+			jthis.find('div.subject').append('<span class="icon-new"></span>');
+			jthis.find('span.icon-post-grey').removeClass('icon-post-grey').addClass('icon-post-blue');
+		}
+	});
+}
+
+</script>
+
+<script type="text/javascript">
+$(function() {
+	setTimeout(function() {
+		$.require('https://www.google-analytics.com/ga.js', function() {
+			try {
+				var pageTracker = _gat._getTracker("UA-9784446-1");
+				pageTracker._trackPageview();
+			} catch (err) {}
+		});
+	}, 1000);
+
+	setTimeout(function() {
+		$(".bbs_home_page_three_col .small_logo").each(function(index, element) {
+
+			if ($(element).children("a").length == 0) {
+				$(".bbs_home_page_three_col .bbs_home_page_row_div").eq(index).children('div:first-child').removeClass("col-lg-8").addClass("col-lg-9");
+				$(".bbs_home_page_three_col .bbs_home_page_row_div").eq(index).children('div:last-child').removeClass("col-lg-4").addClass("col-lg-3");
+				$(".bbs_home_page_three_col .bbs_home_page_row_div").eq(index).children('div:first-child').children("span").css("width", "19rem");
+			}
+		})
+	}, 2000);
+
+
+	if (self != top) {
+		$('#header').hide();
+		$('#nav2').hide();
+		$('#footer').hide();
+	}
+
+
+	 // 导航
+    var new_p = 0, start_scrollTop = 0;
+        $(window).scroll(function(e){  
+                new_p = $(this).scrollTop();  
+                  
+                if(start_scrollTop < new_p) {//下滚  
+                    $('.header_fiexd').css("display","none");
+                } else {//上滚  
+                    $('.header_fiexd').css("display","block");
+                }  
+                setTimeout(function(){start_scrollTop = new_p;},0);         
+        });
+
+	
+	// 返回顶部
+	$(window).scroll(function() {
+		if ($(window).scrollTop() >= 500) {
+			$('.act_go_top').fadeIn(300);
+		} else {
+			$('.act_go_top').fadeOut(300);
+		}
+	});
+
+	$('.act_go_top').click(function() {
+		$('html,body').animate({
+			scrollTop: '0px'
+		}, 100);
+	});
+	var m1 = 0;     // 滚动的值
+	var m2 = 0;     // 对比时间的值
+	var timer = null;
+	document.onscroll = function() {
+		clearTimeout(timer) // 每次滚动前 清除一次
+		timer = setTimeout(Data, 2000);
+		m1 = document.documentElement.scrollTop || document.body.scrollTop;
+
+	}
+	function Data() {
+		m2 = document.documentElement.scrollTop || document.body.scrollTop;
+		if(m2 == m1){
+		    $('.act_go_top').fadeOut(300);
+		}
+	}
+
+});
+
+
+</script>
+
+<script>
+(function() {
+	var islogin = '0';
+	if(islogin == 0)  return; 
+	var pm_number = "//www.kanxue.com/pm-new.htm";
+	$.xget(pm_number, function(code, message) {
+		var pm_number = $(".pm_number");
+		var sysm_number = $(".system_message_number");
+		if (code == 0) {
+			var newpms = parseInt(message.newpms);
+			var system_pms = parseInt(message.system_pms);
+			var pm_total = newpms + system_pms;
+			if (pm_total != 0) {
+				pm_total = pm_total > 99 ? "99+" : pm_total;
+				$(".pm_total").html(pm_total);
+				// $(".pm_total").css({
+				// 	"display": "inline-block",
+				// 	"padding": "0px 7px",
+				// 	"font-size": "12px",
+				// 	"line-height": "20px",
+				// 	"color": "white",
+				// 	"background-color": "#f57e42",
+				// 	"border-radius": "9px",
+				// 	"text-indent": "0px"
+				// });
+
+				if (system_pms > 0 && newpms == 0) {
+					var href = "//www.kanxue.com/pm-system_read-1.htm";
+					$(".pm_total_a").attr("href", href);
+				}
+
+			} else {
+				// $(".pm_total_a").css("display","none");
+			};
+			if (message.newpms != 0) {
+				pm_number.html(message.newpms);
+				pm_number.addClass("pmmessage_number");
+			} else {
+				pm_number.css("display", "none");
+			};
+			if (message.system_pms != 0) {
+				sysm_number.html(message.system_pms);
+				sysm_number.addClass("pmmessage_number");
+			} else {
+				sysm_number.css("display", "none");
+			};
+			if (message.newpms != 0) {
+				pm_number.html(message.newpms);
+				pm_number.addClass("pm_numbers_");
+			} else {
+				pm_number.css("display", "none");
+			};
+			if (message.system_pms != 0) {
+				sysm_number.html(message.system_pms);
+				sysm_number.addClass("pm_numbers_");
+			} else {
+				sysm_number.css("display", "none");
+			};
+
+
+		} else {
+			// $(".pm_total").css({
+			// 	"display": "inline-block",
+			// 	"padding": "0px 3px",
+			// 	"font-size": "12px",
+			// 	"line-height": "20px",
+			// 	"color": "white",
+			// 	"background-color": "#f57e42",
+			// 	"border-radius": "9px",
+			// 	"text-indent": "0px"
+			// });
+			pm_number.css("display", "none");
+			sysm_number.css("display", "none");
+
+		}
+	})
+
+})(jQuery);
+</script>
+<script>
+	//统计在线
+
+	(function() {
+
+		var uid = '0';
+		var current_time = '1554804749';
+		
+		var last_time;
+		if(uid > 0) {
+			//10分钟以内不请求。
+			last_time = storagePlus.get('last_active_time_'+uid) || 0;
+			//大于5分钟请求接口。
+			if((current_time - last_time)/60 > 5) {
+				$.xpost('user-online_sumtime.htm',{}, function(code, msg) {
+					if(code == 0) {
+						storagePlus.set('last_active_time_'+uid, msg);
+					} else {
+						console.info('msg');
+					}
+				});
+			}
+		}
+
+
+
+	})();
+
+	
+
+
+</script>
+<script>
+
+var forumlist = [
+    {
+        "fid": "4",
+        "fup": "3",
+        "name": "『软件逆向』",
+        "rank": "29"
+    },
+    {
+        "fid": "29",
+        "fup": "2",
+        "name": "『论坛管理团队』",
+        "rank": "29"
+    },
+    {
+        "fid": "52",
+        "fup": "10",
+        "name": "OllyDbg插件收集区",
+        "rank": "29"
+    },
+    {
+        "fid": "69",
+        "fup": "20",
+        "name": "『经典问答』",
+        "rank": "29"
+    },
+    {
+        "fid": "122",
+        "fup": "37",
+        "name": "CTF2019提交区(隐藏版块)",
+        "rank": "29"
+    },
+    {
+        "fid": "102",
+        "fup": "137",
+        "name": "『科锐培训』",
+        "rank": "29"
+    },
+    {
+        "fid": "141",
+        "fup": "140",
+        "name": "CrackMe存档区",
+        "rank": "29"
+    },
+    {
+        "fid": "152",
+        "fup": "0",
+        "name": "学习园地",
+        "rank": "29"
+    },
+    {
+        "fid": "2",
+        "fup": "1",
+        "name": "『论坛版务』",
+        "rank": "28"
+    },
+    {
+        "fid": "53",
+        "fup": "10",
+        "name": "IDA Pro插件收集区",
+        "rank": "28"
+    },
+    {
+        "fid": "76",
+        "fup": "37",
+        "name": "1)珠海金山2007逆向分析挑战",
+        "rank": "28"
+    },
+    {
+        "fid": "99",
+        "fup": "65",
+        "name": "《加密与解密(第4版)》",
+        "rank": "28"
+    },
+    {
+        "fid": "169",
+        "fup": "137",
+        "name": "『15PB培训』",
+        "rank": "28"
+    },
+    {
+        "fid": "125",
+        "fup": "127",
+        "name": "奇虎360软件安全大赛答案提交区",
+        "rank": "28"
+    },
+    {
+        "fid": "128",
+        "fup": "79",
+        "name": "『智能设备』",
+        "rank": "27"
+    },
+    {
+        "fid": "21",
+        "fup": "57",
+        "name": "《软件加密技术内幕》",
+        "rank": "27"
+    },
+    {
+        "fid": "68",
+        "fup": "37",
+        "name": "2)PEDIY Crackme竞",
+        "rank": "27"
+    },
+    {
+        "fid": "41",
+        "fup": "3",
+        "name": "『编程技术』",
+        "rank": "27"
+    },
+    {
+        "fid": "79",
+        "fup": "0",
+        "name": "前沿科技",
+        "rank": "27"
+    },
+    {
+        "fid": "78",
+        "fup": "2",
+        "name": "『申请提交区』",
+        "rank": "27"
+    },
+    {
+        "fid": "95",
+        "fup": "65",
+        "name": "《0day:软件漏洞分析技术》",
+        "rank": "27"
+    },
+    {
+        "fid": "160",
+        "fup": "137",
+        "name": "『麦洛科菲培训』",
+        "rank": "27"
+    },
+    {
+        "fid": "161",
+        "fup": "158",
+        "name": "『Android安全』",
+        "rank": "27"
+    },
+    {
+        "fid": "166",
+        "fup": "158",
+        "name": "『iOS安全』",
+        "rank": "27"
+    },
+    {
+        "fid": "88",
+        "fup": "3",
+        "name": "『加壳脱壳』",
+        "rank": "26"
+    },
+    {
+        "fid": "91",
+        "fup": "37",
+        "name": "3)看雪论坛2008 Explo",
+        "rank": "26"
+    },
+    {
+        "fid": "158",
+        "fup": "0",
+        "name": "移动平台",
+        "rank": "26"
+    },
+    {
+        "fid": "3",
+        "fup": "0",
+        "name": "桌面平台",
+        "rank": "25"
+    },
+    {
+        "fid": "120",
+        "fup": "37",
+        "name": "4)腾讯公司2008软件安全竞赛",
+        "rank": "25"
+    },
+    {
+        "fid": "57",
+        "fup": "2",
+        "name": "『回收站』",
+        "rank": "25"
+    },
+    {
+        "fid": "132",
+        "fup": "3",
+        "name": "『密码算法』",
+        "rank": "24"
+    },
+    {
+        "fid": "123",
+        "fup": "57",
+        "name": "《微软.NET程序的加密与解密》",
+        "rank": "24"
+    },
+    {
+        "fid": "127",
+        "fup": "37",
+        "name": "5)奇虎360软件安全比赛",
+        "rank": "24"
+    },
+    {
+        "fid": "37",
+        "fup": "116",
+        "name": "『CrackMe』",
+        "rank": "23"
+    },
+    {
+        "fid": "140",
+        "fup": "37",
+        "name": "6)PEDIY Crackme竞",
+        "rank": "23"
+    },
+    {
+        "fid": "108",
+        "fup": "0",
+        "name": "企业建设",
+        "rank": "22"
+    },
+    {
+        "fid": "65",
+        "fup": "1",
+        "name": "『图书项目』",
+        "rank": "22"
+    },
+    {
+        "fid": "150",
+        "fup": "3",
+        "name": "『二进制漏洞』",
+        "rank": "22"
+    },
+    {
+        "fid": "163",
+        "fup": "65",
+        "name": "《C++反汇编与逆向分析技术》",
+        "rank": "22"
+    },
+    {
+        "fid": "10",
+        "fup": "3",
+        "name": "『工具下载』",
+        "rank": "21"
+    },
+    {
+        "fid": "116",
+        "fup": "0",
+        "name": "看雪CTF",
+        "rank": "21"
+    },
+    {
+        "fid": "155",
+        "fup": "37",
+        "name": "8)腾讯公司2010软件安全竞赛",
+        "rank": "21"
+    },
+    {
+        "fid": "168",
+        "fup": "65",
+        "name": "《Android安全与逆向分析》",
+        "rank": "21"
+    },
+    {
+        "fid": "157",
+        "fup": "37",
+        "name": "9)2011 Exploit M",
+        "rank": "20"
+    },
+    {
+        "fid": "121",
+        "fup": "37",
+        "name": "11）移动安全挑战赛（MSC）",
+        "rank": "18"
+    },
+    {
+        "fid": "129",
+        "fup": "37",
+        "name": "12）2015第2届移动安全挑战",
+        "rank": "17"
+    },
+    {
+        "fid": "136",
+        "fup": "0",
+        "name": "职场生活",
+        "rank": "12"
+    },
+    {
+        "fid": "47",
+        "fup": "136",
+        "name": "『招聘专区』",
+        "rank": "4"
+    },
+    {
+        "fid": "1",
+        "fup": "0",
+        "name": "站务管理/产品",
+        "rank": "3"
+    },
+    {
+        "fid": "97",
+        "fup": "152",
+        "name": "『求助问答』",
+        "rank": "3"
+    },
+    {
+        "fid": "137",
+        "fup": "136",
+        "name": "『职业生涯』",
+        "rank": "3"
+    },
+    {
+        "fid": "171",
+        "fup": "116",
+        "name": "『Pwn』",
+        "rank": "2"
+    },
+    {
+        "fid": "20",
+        "fup": "97",
+        "name": "『¥付费问答』",
+        "rank": "2"
+    },
+    {
+        "fid": "45",
+        "fup": "136",
+        "name": "『茶余饭后』",
+        "rank": "2"
+    },
+    {
+        "fid": "162",
+        "fup": "108",
+        "name": "『业务安全』",
+        "rank": "2"
+    },
+    {
+        "fid": "170",
+        "fup": "57",
+        "name": "看雪产品",
+        "rank": "2"
+    },
+    {
+        "fid": "32",
+        "fup": "152",
+        "name": "『外文翻译』",
+        "rank": "1"
+    },
+    {
+        "fid": "64",
+        "fup": "136",
+        "name": "『会员专区』",
+        "rank": "1"
+    },
+    {
+        "fid": "151",
+        "fup": "108",
+        "name": "『WEB安全』",
+        "rank": "1"
+    },
+    {
+        "fid": "172",
+        "fup": "79",
+        "name": "『区块链安全』",
+        "rank": "0"
+    }
+];
+
+// 三级版块
+function forum_tree(forumlist, template) {
+	var template = template || '<option value="{fid}">{tab}{name}</option>'+"\r\n";
+	var s = '';
+	var forumlist1 = forumlist.filter(function(v) {return v.fup == 0});
+	for(var i1=0; i1<forumlist1.length; i1++) {
+		var v1 = forumlist1[i1];
+		s += '►'+xn.template(template, {fid: v1.fid, name: v1.name, tab: "　"});
+		var forumlist2 = forumlist.filter(function(v2) {return v2.fup == v1.fid});
+		for(var i2=0; i2<forumlist2.length; i2++) {
+			var v2 = forumlist2[i2];
+			s += xn.template(template, {fid: v2.fid, name: v2.name, tab: "　　"});
+			var forumlist3 = forumlist.filter(function(v3) {return v3.fup == v2.fid});
+			for(var i3=0; i3<forumlist3.length; i3++) {
+				var v3 = forumlist3[i3];
+				s += xn.template(template, {fid: v3.fid, name: v3.name, tab: "　　　　"});
+			}
+
+		}
+	}
+	return s;
+}
+
+
+// 版主管理：移动 / moderator : move
+$('.mod-button button.move').off('click').on('click', function() {
+	var modtid = $('input[name="modtid"]').checked();
+	if(modtid.length == 0) return $.alert(lang.please_choose_thread);
+	var select = '<select name="fid">'+forum_tree(forumlist)+'</select>';
+	$.confirm(lang.move_forum, function() {
+		var tids = xn.implode('_', modtid);
+		var newfid = $('select[name="fid"]').val();
+		$.xpost(xn.url('mod-move-'+tids+'-'+newfid), function(code, message) {
+			if(code != 0) return $.alert(message);
+			$.alert(message).delay(1000).location('');
+		});
+	}, {'body': '<p>'+lang.choose_move_forum+'：'+select+'</p>'});
+})
+
+</script><script>
+
+// 版主管理：审核
+$('.mod-button button.audit').on('click', function() {
+	var modtid = $('input[name="modtid"]').checked();
+	if(modtid.length == 0) return $.alert(lang.please_choose_thread);
+	var radios = xn.form_radio('audit', {"1": "审核通过", "2": "审核不通过"});
+	$.confirm('审核主题', function() {
+		var tids = xn.implode('_', modtid);
+		var audit = $('input[name="audit"]').checked();
+		var postdata = {audit: audit};
+		$.xpost(xn.url('mod-audit-'+tids), postdata, function(code, message) {
+			if(code != 0) return $.alert(message);
+			$.alert(message).delay(1000).location('');
+		});
+	}, {'body': '<p>'+'审核选项'+'：'+radios+'</p>'});
+})
+
+</script>
+<script>
+
+$(function() {
+	// 版主管理：删除 / moderator : delete
+	$('.mod-button button.delete').off('click').on('click', function() {
+		var modtid = $('input[name="modtid"]').checked();
+		if(modtid.length == 0) return $.alert(lang.please_choose_thread);
+		var radios = '';
+				//var htmladd = '<br><br><label class="text-small"><input type="checkbox" name="logic" value="0" /> 物理删除</label>';
+		//htmladd += '<br><label class="text-small"><input type="checkbox" name="logic" value="0" /> 恢复删除</label>';
+		$.confirm(xn.lang('confirm_delete_thread', {n:modtid.length}) + '<br><br>'+radios, function() {
+			var tids = xn.implode('_', modtid);
+			var type = $('input[name="type"]').checked();
+			$.xpost(xn.url('mod-delete-'+tids), {type: type}, function(code, message) {
+				if(code != 0) return $.alert(message);
+				$.alert(message).delay(1000).location('');
+			});
+		});
+	})
+
+	// 恢复逻辑删除的帖子
+	$('body').on('click', '.post_recover', function() {
+		var jthis = $(this);
+		var href = jthis.data('href');
+		var isfirst = jthis.attr('isfirst');
+		if(window.confirm('确定恢复删除的帖子？')) {
+			$.xpost(href, function(code, message) {
+				var isfirst = jthis.attr('isfirst');
+				if(code == 0) {
+					if(isfirst == '1') {
+						$.location('forum-0.htm');
+					} else {
+						window.location.reload();
+					}
+				} else {
+					$.alert(message);
+				}
+			});
+		}
+		return false;
+	});
+
+})
+
+</script>
+	<script>
+
+        var homenotice_area = document.getElementById('homenoticeBox');
+        var homenotice_iliHeight = 24; //单行滚动的高度
+        var homenotice_speed = 50; //滚动的速度
+        var homenotice_time;
+        var homenotice_delay = 2000;
+        homenotice_area.scrollTop = 0;
+        homenotice_area.innerHTML += homenotice_area.innerHTML; //克隆一份一样的内容
+        function startScroll() {
+                homenotice_time = setInterval("scrollUp()", homenotice_speed);
+                homenotice_area.scrollTop++;
+        }
+
+        function scrollUp() {
+                if (homenotice_area.scrollTop % homenotice_iliHeight == 0) {
+                        clearInterval(homenotice_time);
+                        setTimeout(startScroll, homenotice_delay);
+                } else {
+                        homenotice_area.scrollTop++;
+                        if (homenotice_area.scrollTop >= homenotice_area.scrollHeight / 2) {
+                                homenotice_area.scrollTop = 0;
+                        }
+                }
+        }
+        setTimeout(startScroll, homenotice_delay)
+
+</script><script>
+var tids = {
+    "250669": "1554772610",
+    "250638": "1554803279",
+    "250635": "1554772986",
+    "250630": "1554538323",
+    "250625": "1554773042",
+    "250618": "1554375364",
+    "250616": "1554803358",
+    "250601": "1554773442"
+};
+xn_read_unread(tids, 0);
+</script>
+<script>
+jsearch_form = $('#search_form');
+jsearch_form.on('submit', function() {
+	var keyword = jsearch_form.find('input[name="keyword"]').val();
+	var url = xn.url('search-'+xn.urlencode(keyword));
+	window.location = url;
+	return false;
+});
+</script>
+
+	
+	<script>
+	$(function() {
+		var uid =  '0';
+		var mar = document.getElementById("marquee");
+		mar.scrollLeft = 450;
+		//查询今日是否签到
+		$.xget('user-is_signin.htm', function(code, message) {
+			if(code == 1) {
+				var sign_html = '<img src="view/img/coins.png" style="max-width: 13px;" alt="" srcset=""><span class="">&nbsp;&nbsp;签到奖励</span>';
+				$(".signin").html(sign_html);
+			} else if(code == 0) {
+				var sign_html = '<i class="icon-check"></i><span class=""> 已签到</span>';
+				$(".signin").html(sign_html);
+				$(".signin").addClass("signin_over").removeClass('sign');
+			}
+		})
+		$(".signin").on('click', function() {
+			$.xpost('user-signin.htm', {}, function(code, message) {
+				if(code == 0) {
+					$.msg('签到成功，已获取'+message+'雪币！', {icon:6});
+					var sign_html = '<i class="icon-check"></i><span class=""> 已签到</span>';
+					$(".signin").html(sign_html);
+					$(".signin").addClass("signin_over").removeClass('sign');
+					return;
+				} else {
+					// $.msg(message,{icon:2});
+					window.location.href = 'user-tasks-'+uid+'-1.htm';
+					return;
+				}
+			})
+		});
+
+	})
+	</script>
+
+</body></html>
