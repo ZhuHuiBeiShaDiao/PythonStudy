@@ -1,0 +1,6 @@
+http://www.win4000.com/wallpaper_0_0_0_1.html
+NextPage:a.next
+div.list_cont.Left_list_cont > div > div > div > ul > li  --> 一套
+div.ptitle > em -->一套有几张
+div.pic-next-img > a 下一张
+div.paper-down > a --> http://xxxx.jpg?down 下载 去除?down
