@@ -1,0 +1,215 @@
+pbatard/rufus,https://github.com/pbatard/rufus,The Reliable USB Formatting Utility,C,2019年4月10日 GMT+8 上午4:37
+cea-sec/Sibyl,https://github.com/cea-sec/Sibyl,A Miasm2 based function divination.,Python,2019年4月8日 GMT+8 下午10:43
+dutchcoders/transfer.sh,https://github.com/dutchcoders/transfer.sh,Easy and fast file sharing from the command-line.,Go,2019年4月9日 GMT+8 上午1:30
+horsicq/stringsx64dbg,https://github.com/horsicq/stringsx64dbg,Strings plugin for x64dbg,C,2019年4月10日 GMT+8 上午12:21
+0xAX/linux-insides,https://github.com/0xAX/linux-insides,A little bit about a linux kernel,Python,2019年3月29日 GMT+8 下午7:39
+NationalSecurityAgency/ghidra,https://github.com/NationalSecurityAgency/ghidra,Ghidra is a software reverse engineering (SRE) framework,Java,2019年4月10日 GMT+8 上午7:09
+changeofpace/Self-Remapping-Code,https://github.com/changeofpace/Self-Remapping-Code,This program remaps its image to prevent the page protection of pages contained in the image from being modified via NtProtectVirtualMemory.,C++,2019年3月19日 GMT+8 下午6:14
+NASA-SW-VnV/ikos,https://github.com/NASA-SW-VnV/ikos,Static analyzer for C/C++ based on the theory of Abstract Interpretation.,C++,2019年4月9日 GMT+8 上午7:59
+WireGuard/WireGuard,https://github.com/WireGuard/WireGuard,Mirror only. Official repository is at https://git.zx2c4.com/WireGuard,C,2019年4月6日 GMT+8 下午7:12
+wbenny/DetoursNT,https://github.com/wbenny/DetoursNT,Detours with just single dependency - NTDLL,C++,2019年2月24日 GMT+8 上午4:46
+wbenny/pdbex,https://github.com/wbenny/pdbex,pdbex is a utility for reconstructing structures and unions from the PDB into compilable C headers,C++,2019年4月9日 GMT+8 下午9:56
+trailofbits/remill,https://github.com/trailofbits/remill,"Library for lifting of x86, amd64, and aarch64 machine code to LLVM bitcode",C++,2019年4月4日 GMT+8 下午12:15
+cksystemsteaching/selfie,https://github.com/cksystemsteaching/selfie,"An educational software system of a tiny self-compiling C compiler, a tiny self-executing RISC-V emulator, and a tiny self-hosting RISC-V hypervisor.",C,2019年4月10日 GMT+8 上午6:28
+rxi/microui,https://github.com/rxi/microui,Tiny immediate-mode UI library,C,2019年3月31日 GMT+8 上午1:19
+Mattiwatti/PPLKiller,https://github.com/Mattiwatti/PPLKiller,Protected Processes Light Killer,C++,2019年2月17日 GMT+8 上午2:25
+michel-pi/GameOverlay.Net,https://github.com/michel-pi/GameOverlay.Net,Draw hardware accelerated graphics using our Direct2D1 renderer and create transparent click-through windows.,C#,2019年4月2日 GMT+8 下午4:31
+ionescu007/VisualUefi,https://github.com/ionescu007/VisualUefi,A project for allowing EDK-II Development with Visual Studio,C,2019年3月23日 GMT+8 上午4:33
+ContionMig/ContionMig-AntiCheat,https://github.com/ContionMig/ContionMig-AntiCheat,"Anti Cheat i made in my free time. Credits to everyone who helped are in the files and some are in the code. I will definitely improve this Anti Cheat along the way, now its just beta. Enjoy.",C,2019年3月30日 GMT+8 上午9:54
+zevv/duc,https://github.com/zevv/duc,"Dude, where are my bytes: Duc, a library and suite of tools for inspecting disk usage",C,2019年4月7日 GMT+8 上午9:49
+radareorg/cutter,https://github.com/radareorg/cutter,Free and open-source GUI for radare2 reverse engineering framework,C++,2019年4月10日 GMT+8 上午5:06
+hasherezade/bearparser,https://github.com/hasherezade/bearparser,Portable Executable parsing library (from PE-bear),C++,2019年1月14日 GMT+8 上午6:03
+Speedi13/BFV-Decryption,https://github.com/Speedi13/BFV-Decryption,BFV Decryption Demo,C++,2019年4月4日 GMT+8 下午7:40
+Sycnex/Windows10Debloater,https://github.com/Sycnex/Windows10Debloater,Script to remove Windows 10 bloatware.,PowerShell,2019年3月28日 GMT+8 上午6:34
+stevemk14ebr/PolyHook,https://github.com/stevemk14ebr/PolyHook,x86/x64 C++ Hooking Library,C++,2018年7月19日 GMT+8 上午1:00
+ChadSki/SharpNeedle,https://github.com/ChadSki/SharpNeedle,Inject C# code into a running process,C++,2018年7月18日 GMT+8 上午10:18
+ajkhoury/SigMaker-x64,https://github.com/ajkhoury/SigMaker-x64,IDA Pro 7.0 compatible SigMaker plugin,C++,2018年11月22日 GMT+8 上午5:26
+Ahmadmansoor/AdvancedScript,https://github.com/Ahmadmansoor/AdvancedScript,"Add More Features for x64dbg Script System,with some Functions which will help Plugin Coder",C,2019年4月3日 GMT+8 下午8:30
+strivexjun/MemoryModulePP,https://github.com/strivexjun/MemoryModulePP,modify from memorymodule. support exception,C,2019年3月10日 GMT+8 下午1:22
+hzqst/Syscall-Monitor,https://github.com/hzqst/Syscall-Monitor,Syscall Monitor is a system monitor program (like Sysinternal's Process Monitor) using Intel VT-X/EPT for Windows7+,Unknow language,2017年6月26日 GMT+8 上午10:39
+h2non/filetype,https://github.com/h2non/filetype,"Small, dependency-free, fast Go package to infer file types based on the magic numbers signature",Go,2019年4月7日 GMT+8 上午9:38
+fdiskyou/injectAllTheThings,https://github.com/fdiskyou/injectAllTheThings,Seven different DLL injection techniques in one single project.,C,2019年3月24日 GMT+8 下午7:49
+tandasat/PgResarch,https://github.com/tandasat/PgResarch,PatchGuard Research,C++,2018年10月7日 GMT+8 上午12:18
+ionescu007/SimpleVisor,https://github.com/ionescu007/SimpleVisor,"SimpleVisor is a simple, portable, Intel VT-x hypervisor with two specific goals: using the least amount of assembly code (10 lines), and having the smallest amount of VMX-related code to support d…",C,2018年12月9日 GMT+8 上午9:51
+Microsoft/llvm-mctoll,https://github.com/Microsoft/llvm-mctoll,llvm-mctoll,C++,2019年3月29日 GMT+8 上午9:33
+HoShiMin/Avanguard,https://github.com/HoShiMin/Avanguard,The Win32 Anti-Intrusion Library,C++,2019年3月27日 GMT+8 下午10:50
+danigargu/heap-viewer,https://github.com/danigargu/heap-viewer,"An IDA Pro plugin to examine the glibc heap, focused on exploit development",Python,2019年4月10日 GMT+8 上午2:30
+hzqst/CGAssistant,https://github.com/hzqst/CGAssistant,crossgate cheat program only cg_item_6000 for now,C++,2019年3月28日 GMT+8 上午6:16
+igogo-x86/HexRaysPyTools,https://github.com/igogo-x86/HexRaysPyTools,NoDescr,Python,2019年1月10日 GMT+8 下午6:08
+tanduRE/AvastHV,https://github.com/tanduRE/AvastHV,Hooking SSDT with Avast Internet Security Hypervisor,C,2019年4月7日 GMT+8 上午6:46
+hfiref0x/WinObjEx64,https://github.com/hfiref0x/WinObjEx64,Windows Object Explorer 64-bit,C,2019年4月4日 GMT+8 下午2:50
+bazelbuild/rules_rust,https://github.com/bazelbuild/rules_rust,Rust rules for Bazel,Python,2019年4月6日 GMT+8 上午9:09
+lynnux/xspy,https://github.com/lynnux/xspy,Spy for MFC/ATL/WTL window,C++,2019年2月25日 GMT+8 下午3:21
+JustasMasiulis/nt_wrapper,https://github.com/JustasMasiulis/nt_wrapper,A wrapper library around native windows sytem APIs,C++,2019年3月24日 GMT+8 下午9:43
+jnastarot/shibari,https://github.com/jnastarot/shibari,Framework for linking multiple PE\PE + files to one,C++,2019年3月26日 GMT+8 上午6:08
+Bareflank/boxy,https://github.com/Bareflank/boxy,bareflank based hypervisor with guest support,C++,2019年4月7日 GMT+8 下午11:16
+odzhan/injection,https://github.com/odzhan/injection,Windows process injection methods,C,2019年3月27日 GMT+8 上午3:43
+JKornev/hidden,https://github.com/JKornev/hidden,"Windows driver with usermode interface which can hide objects of file-system and registry, protect processes and etc",C,2018年12月20日 GMT+8 上午7:54
+fyc132/skprotect_source,https://github.com/fyc132/skprotect_source,x64 free protect Features 1.process/thread handle protect 2.anti taskmgr.exe 3.hide process 4.anti-debugger(user/kernel debugger),C++,2019年4月3日 GMT+8 下午10:03
+hacksysteam/HackSysExtremeVulnerableDriver,https://github.com/hacksysteam/HackSysExtremeVulnerableDriver,HackSys Extreme Vulnerable Windows Driver,C,2018年9月24日 GMT+8 下午10:04
+google/cpu_features,https://github.com/google/cpu_features,A cross platform C99 library to get cpu features at runtime.,C,2019年3月20日 GMT+8 下午5:04
+ecx86/classinformer-ida7,https://github.com/ecx86/classinformer-ida7,ClassInformer backported for IDA Pro 7.0,C++,2019年3月12日 GMT+8 下午12:36
+W4RH4WK/Debloat-Windows-10,https://github.com/W4RH4WK/Debloat-Windows-10,A collection of Scripts which disable / remove Windows 10 Features and Apps,PowerShell,2019年3月15日 GMT+8 上午1:55
+phackt/stager.dll,https://github.com/phackt/stager.dll,Code from this article: https://blog.rapid7.com/2018/05/03/hiding-metasploit-shellcode-to-evade-windows-defender/,C++,2019年3月26日 GMT+8 下午11:03
+baarsik/Tauros-v2,https://github.com/baarsik/Tauros-v2,NoDescr,C++,2018年10月11日 GMT+8 上午4:09
+Microsoft/Detours,https://github.com/Microsoft/Detours,Detours is a software package for monitoring and instrumenting API calls on Windows. It is distributed in source code form.,C++,2019年3月21日 GMT+8 下午2:05
+Wunkolo/UWPDumper,https://github.com/Wunkolo/UWPDumper,DLL and Injector for dumping UWP applications at run-time to bypass encrypted file system protection.,C++,2019年3月8日 GMT+8 上午2:13
+luciouskami/APEX-EACBypass,https://github.com/luciouskami/APEX-EACBypass,APEX-EACBypass(usermode),C#,2019年2月26日 GMT+8 下午5:52
+hanickadot/compile-time-regular-expressions,https://github.com/hanickadot/compile-time-regular-expressions,A Compile time PCRE (almost) compatible regular expression matcher.,C++,2019年3月30日 GMT+8 下午11:34
+luciouskami/AnotherApexDebug,https://github.com/luciouskami/AnotherApexDebug,NoDescr,C++,2019年3月6日 GMT+8 上午3:59
+wbenny/KSOCKET,https://github.com/wbenny/KSOCKET,KSOCKET provides a very basic example on how to make a network connections in the Windows Driver by using WSK,C,2019年3月16日 GMT+8 上午5:23
+strivexjun/XAntiDebug,https://github.com/strivexjun/XAntiDebug,VMProtect 3.x Anti-debug Method Improved,C++,2019年1月21日 GMT+8 下午4:54
+horsicq/nfdx64dbg,https://github.com/horsicq/nfdx64dbg,Plugin for x64dbg Linker/Compiler/Tool detector.,C,2019年4月10日 GMT+8 上午12:29
+strivexjun/DriverInjectDll,https://github.com/strivexjun/DriverInjectDll,"Using Driver Global Injection dll, it can hide DLL modules",C++,2019年2月26日 GMT+8 下午4:46
+bztsrc/raspi3-tutorial,https://github.com/bztsrc/raspi3-tutorial,Bare metal Raspberry Pi 3 tutorials,C,2019年3月31日 GMT+8 上午8:27
+hzqst/unicorn_pe,https://github.com/hzqst/unicorn_pe,Unicorn PE is an unicorn based instrumentation project designed to emulate code execution for windows PE files.,C,2019年2月21日 GMT+8 上午7:50
+JonathanSalwan/ROPgadget,https://github.com/JonathanSalwan/ROPgadget,"This tool lets you search your gadgets on your binaries to facilitate your ROP exploitation. ROPgadget supports ELF, PE and Mach-O format on x86, x64, ARM, ARM64, PowerPC, SPARC and MIPS architectu…",Python,2019年3月25日 GMT+8 下午5:36
+Wenzel/awesome-virtualization,https://github.com/Wenzel/awesome-virtualization,Collection of resources about Virtualization,Unknow language,2019年3月29日 GMT+8 下午8:44
+hzqst/VmwareHardenedLoader,https://github.com/hzqst/VmwareHardenedLoader,Vmware Hardened VM detection mitigation loader (anti anti-vm),C,2018年12月7日 GMT+8 下午3:30
+seL4/seL4,https://github.com/seL4/seL4,The seL4 microkernel,C,2019年4月9日 GMT+8 上午9:44
+Zer0Mem0ry/KernelBhop,https://github.com/Zer0Mem0ry/KernelBhop,Cheat that uses a driver instead WinAPI for Reading / Writing memory.,C,2019年1月2日 GMT+8 下午9:03
+fireeye/flare-ida,https://github.com/fireeye/flare-ida,IDA Pro utilities from FLARE team,Python,2019年3月23日 GMT+8 上午12:39
+processhacker/phnt,https://github.com/processhacker/phnt,Native API header files for the Process Hacker project.,C,2018年10月3日 GMT+8 上午6:16
+airbus-seclab/bincat,https://github.com/airbus-seclab/bincat,"Binary code static analyser, with IDA integration. Performs value and taint analysis, type reconstruction, use-after-free and double-free detection",OCaml,2019年3月27日 GMT+8 下午6:09
+TonyChen56/HackerTools,https://github.com/TonyChen56/HackerTools,使用MFC编写的病毒技术合集,Unknow language,2019年3月11日 GMT+8 下午1:25
+p-gen/smenu,https://github.com/p-gen/smenu,Terminal utility that reads words from standard input or from a file and creates an interactive selection window just below the cursor. The selected words are then sent to standard output. More in …,C,2019年3月31日 GMT+8 下午3:29
+s-matyukevich/raspberry-pi-os,https://github.com/s-matyukevich/raspberry-pi-os,Learning operating system development using Linux kernel and Raspberry Pi,C,2019年3月29日 GMT+8 下午4:44
+silverf0x/RpcView,https://github.com/silverf0x/RpcView,RpcView is a free tool to explore and decompile Microsoft RPC interfaces,C++,2019年3月24日 GMT+8 上午5:39
+vmcall/x64-vm,https://github.com/vmcall/x64-vm,x86-64 virtual machine and disassembler,C++,2019年4月6日 GMT+8 上午4:08
+betaflight/betaflight,https://github.com/betaflight/betaflight,Open Source Flight Controller Firmware,C,2019年4月10日 GMT+8 下午12:43
+cypress-io/cypress,https://github.com/cypress-io/cypress,"Fast, easy and reliable testing for anything that runs in a browser.",CoffeeScript,2019年4月10日 GMT+8 下午12:57
+mozilla-mobile/fenix,https://github.com/mozilla-mobile/fenix,Fenix is not your parent's Android browser.,Kotlin,2019年4月10日 GMT+8 上午11:41
+google/flatbuffers,https://github.com/google/flatbuffers,Memory Efficient Serialization Library,C++,2019年4月10日 GMT+8 上午8:21
+MassTransit/MassTransit,https://github.com/MassTransit/MassTransit,Distributed Application Framework for .NET,C#,2019年4月10日 GMT+8 上午11:46
+aliyun/alibaba-cloud-sdk-go,https://github.com/aliyun/alibaba-cloud-sdk-go,Alibaba Cloud SDK for Go programming language.,Go,2019年4月10日 GMT+8 下午1:38
+dotnet/core,https://github.com/dotnet/core,Home repository for .NET Core,Shell,2019年4月10日 GMT+8 下午12:27
+cpprefjp/site,https://github.com/cpprefjp/site,cpprefjpサイトのMarkdownソース,Unknow language,2019年4月9日 GMT+8 下午10:19
+GoogleWebComponents/model-viewer,https://github.com/GoogleWebComponents/model-viewer,Easily display interactive 3D models on the web and in AR!,JavaScript,2019年4月10日 GMT+8 上午4:35
+Fyrd/caniuse,https://github.com/Fyrd/caniuse,Raw browser/feature support data from caniuse.com,JavaScript,2019年4月10日 GMT+8 上午11:15
+freeCodeCamp/freeCodeCamp,https://github.com/freeCodeCamp/freeCodeCamp,The https://www.freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions of people.,JavaScript,2019年4月10日 GMT+8 下午1:48
+urbit/arvo,https://github.com/urbit/arvo,The Urbit operating system,JavaScript,2019年4月10日 GMT+8 上午11:15
+xwiki/xwiki-platform,https://github.com/xwiki/xwiki-platform,The XWiki platform,Java,2019年4月10日 GMT+8 上午12:00
+apache/arrow,https://github.com/apache/arrow,"Apache Arrow is a cross-language development platform for in-memory data. It specifies a standardized language-independent columnar memory format for flat and hierarchical data, organized for effic…",C++,2019年4月10日 GMT+8 上午11:51
+EternityX/DEADCELL-CSGO,https://github.com/EternityX/DEADCELL-CSGO,Full source to the CS:GO cheat,C,2019年4月10日 GMT+8 上午5:42
+umbraco/Umbraco-CMS,https://github.com/umbraco/Umbraco-CMS,"The simple, flexible and friendly ASP.NET CMS used by more than 400.000 websites",C#,2019年4月10日 GMT+8 上午7:52
+ant-design/ant-design,https://github.com/ant-design/ant-design,🌈 A UI Design Language,TypeScript,2019年4月10日 GMT+8 上午11:58
+pi-hole/pi-hole,https://github.com/pi-hole/pi-hole,A black hole for Internet advertisements,Shell,2019年4月9日 GMT+8 上午11:35
+RocketChat/Rocket.Chat,https://github.com/RocketChat/Rocket.Chat,"Have your own Slack like online chat, built with Meteor.",JavaScript,2019年4月10日 GMT+8 下午1:08
+cnlh/nps,https://github.com/cnlh/nps,一款轻量级、功能强大的内网穿透代理服务器。支持tcp、udp流量转发，支持内网http代理、内网socks5代理，同时支持snappy压缩、站点保护、加密传输、多路复用、header修改等。支持web图形化管理，集成多用户模式。,Go,2019年4月8日 GMT+8 下午8:44
+MirServer/mir,https://github.com/MirServer/mir,The Mir compositor,C++,2019年4月10日 GMT+8 下午1:45
+Qiskit/qiskit-aer,https://github.com/Qiskit/qiskit-aer,Aer is a high performance simulator for quantum circuits that includes noise models,Python,2019年4月10日 GMT+8 上午5:16
+burst-apps-team/phoenix,https://github.com/burst-apps-team/phoenix,BURST Cross-Platform Wallet UI,TypeScript,2019年4月10日 GMT+8 下午12:09
+denoland/deno,https://github.com/denoland/deno,"A secure JavaScript/TypeScript runtime built with V8, Rust, and Tokio",TypeScript,2019年4月10日 GMT+8 下午1:25
+ansible/awx,https://github.com/ansible/awx,AWX Project,Python,2019年4月10日 GMT+8 上午5:19
+nats-io/gnatsd,https://github.com/nats-io/gnatsd,"High-Performance server for NATS, the cloud native messaging system.",Go,2019年4月10日 GMT+8 上午9:04
+envoyproxy/envoy,https://github.com/envoyproxy/envoy,Cloud-native high-performance edge/middle/service proxy,C++,2019年4月10日 GMT+8 下午12:24
+esp8266/Arduino,https://github.com/esp8266/Arduino,ESP8266 core for Arduino,C,2019年4月10日 GMT+8 上午6:14
+prysmaticlabs/prysm,https://github.com/prysmaticlabs/prysm,Go implementation of Ethereum 2.0 - casper & sharding,Go,2019年4月10日 GMT+8 下午1:07
+agda/agda,https://github.com/agda/agda,Agda is a dependently typed programming language / interactive theorem prover.,Haskell,2019年4月10日 GMT+8 下午12:08
+acemod/ACE3,https://github.com/acemod/ACE3,Open-source realism mod for Arma 3,C++,2019年4月10日 GMT+8 上午4:38
+rlworkgroup/garage,https://github.com/rlworkgroup/garage,A framework for reproducible reinforcement learning research,Python,2019年4月10日 GMT+8 下午12:23
+csound/csound,https://github.com/csound/csound,Main repository for Csound,C,2019年4月9日 GMT+8 下午3:46
+open-webrtc-toolkit/owt-server,https://github.com/open-webrtc-toolkit/owt-server,General server (streaming/conference/transcoding/anayltics) for OWT. (A.k.a. MediaServer),JavaScript,2019年4月10日 GMT+8 上午9:31
+dotnet/core-sdk,https://github.com/dotnet/core-sdk,.NET Core SDK Setup,C#,2019年4月10日 GMT+8 下午1:02
+KratosMultiphysics/Kratos,https://github.com/KratosMultiphysics/Kratos,"Kratos Multiphysics (A.K.A Kratos) is a framework for building parallel multi-disciplinary simulation software. Modularity, extensibility and HPC are the main objectives. Kratos has BSD license and…",C++,2019年4月10日 GMT+8 上午3:02
+monix/monix,https://github.com/monix/monix,"Asynchronous, Reactive Programming for Scala and Scala.js.",Scala,2019年4月8日 GMT+8 下午9:32
+ianstormtaylor/slate,https://github.com/ianstormtaylor/slate,A completely customizable framework for building rich text editors.,JavaScript,2019年4月10日 GMT+8 上午12:37
+mapbox/mapbox-gl-native,https://github.com/mapbox/mapbox-gl-native,"Interactive, thoroughly customizable maps in native Android, iOS, macOS, Node.js, and Qt applications, powered by vector tiles and OpenGL",C++,2019年4月10日 GMT+8 上午11:48
+google/filament,https://github.com/google/filament,"Filament is a real-time physically based rendering engine for Android, iOS, Windows, Linux, macOS and WASM/WebGL",C++,2019年4月10日 GMT+8 上午11:53
+scorelab/senz,https://github.com/scorelab/senz,"SenZ is a new kind of query language that can be used to communicate with IoT devices. It is easily integrable, incredibly fast, and is in the highest end of security integration.",Scala,2019年4月10日 GMT+8 上午12:33
+mne-tools/mne-python,https://github.com/mne-tools/mne-python,MNE : Magnetoencephalography (MEG) and Electroencephalography (EEG) in Python,Python,2019年4月10日 GMT+8 下午1:34
+video-dev/hls.js,https://github.com/video-dev/hls.js,JavaScript HLS client using Media Source Extension,JavaScript,2019年4月9日 GMT+8 上午4:01
+scalaz/scalaz-zio,https://github.com/scalaz/scalaz-zio,"ZIO — A type-safe, composable library for asynchronous and concurrent programming in Scala",Scala,2019年4月10日 GMT+8 上午4:10
+tomkerkhove/promitor,https://github.com/tomkerkhove/promitor,Azure Monitor scraper for Prometheus,C#,2019年4月10日 GMT+8 下午1:20
+rakudo/rakudo,https://github.com/rakudo/rakudo,🦋 Rakudo Perl 6 – Perl 6 on MoarVM and the JVM,Perl 6,2019年4月10日 GMT+8 上午7:39
+matomo-org/matomo,https://github.com/matomo-org/matomo,Liberating Web Analytics. Star us on Github? +1. Matomo is the leading open alternative to Google Analytics that gives you full control over your data. Matomo lets you easily collect data from webs…,PHP,2019年4月10日 GMT+8 上午11:29
+assimp/assimp,https://github.com/assimp/assimp,Official Open Asset Import Library Repository. Loads 40+ 3D file formats into one unified and clean data structure.,C++,2019年4月9日 GMT+8 下午11:45
+dotnet/docs,https://github.com/dotnet/docs,This repository contains .NET Documentation.,PowerShell,2019年4月10日 GMT+8 上午11:01
+broadinstitute/cromwell,https://github.com/broadinstitute/cromwell,Scientific workflow engine designed for simplicity & scalability. Trivially transition between one off use cases to massive scale production environments,Scala,2019年4月10日 GMT+8 上午7:29
+Microsoft/MixedRealityToolkit-Unity,https://github.com/Microsoft/MixedRealityToolkit-Unity,MixedRealityToolkit-Unity uses code from the base MixedRealityToolkit repository and makes it easier to consume in Unity.,C#,2019年4月10日 GMT+8 下午12:30
+Beep6581/RawTherapee,https://github.com/Beep6581/RawTherapee,A powerful cross-platform raw photo processing program,C++,2019年4月10日 GMT+8 上午5:08
+gatsbyjs/gatsby,https://github.com/gatsbyjs/gatsby,"Build blazing fast, modern apps and websites with React",JavaScript,2019年4月10日 GMT+8 上午8:51
+python-gsoc/python-blogs,https://github.com/python-gsoc/python-blogs,Python Software Foundation GSoC Blog Platform,JavaScript,2019年4月10日 GMT+8 上午8:37
+fitzgen/dodrio,https://github.com/fitzgen/dodrio,"A fast, bump-allocated virtual DOM library for Rust and WebAssembly.",Rust,2019年4月9日 GMT+8 上午8:51
+reasonml/reason-react,https://github.com/reasonml/reason-react,Reason bindings for ReactJS,OCaml,2019年4月10日 GMT+8 上午12:47
+discordjs/discord.js,https://github.com/discordjs/discord.js,A powerful JavaScript library for interacting with the Discord API,JavaScript,2019年4月10日 GMT+8 上午6:13
+flang-compiler/f18,https://github.com/flang-compiler/f18,F18 is a front-end for Fortran intended to replace the existing front-end in the Flang compiler,C++,2019年4月10日 GMT+8 上午9:34
+Azure/MachineLearningNotebooks,https://github.com/Azure/MachineLearningNotebooks,Python notebooks with ML and deep learning examples on Azure Machine Learning | Microsoft,Jupyter Notebook,2019年4月10日 GMT+8 上午4:21
+bazelbuild/rules_jvm_external,https://github.com/bazelbuild/rules_jvm_external,Rules to resolve and fetch artifacts transitively from Maven repositories,Python,2019年4月9日 GMT+8 上午10:50
+TrinityCore/TrinityCore,https://github.com/TrinityCore/TrinityCore,"TrinityCore Open Source MMO Framework (master = 8.0.1.28153, 3.3.5 = 3.3.5a.12340)",C++,2019年4月10日 GMT+8 上午5:59
+allenai/allennlp,https://github.com/allenai/allennlp,"An open-source NLP research library, built on PyTorch.",Python,2019年4月10日 GMT+8 上午11:13
+tensorflow/cleverhans,https://github.com/tensorflow/cleverhans,"An adversarial example library for constructing attacks, building defenses, and benchmarking both",Python,2019年4月10日 GMT+8 下午12:26
+jimkyndemeyer/js-graphql-intellij-plugin,https://github.com/jimkyndemeyer/js-graphql-intellij-plugin,"GraphQL language support for WebStorm, IntelliJ IDEA and other IDEs based on the IntelliJ Platform.",Java,2019年4月7日 GMT+8 下午3:31
+termux/termux-packages,https://github.com/termux/termux-packages,Android terminal and Linux environment - packages repository.,Shell,2019年4月10日 GMT+8 下午12:02
+babel/babel,https://github.com/babel/babel,🐠 Babel is a compiler for writing next generation JavaScript.,JavaScript,2019年4月10日 GMT+8 上午9:45
+emberjs/ember.js,https://github.com/emberjs/ember.js,Ember.js - A JavaScript framework for creating ambitious web applications,JavaScript,2019年4月10日 GMT+8 上午7:26
+Microsoft/visualfsharp,https://github.com/Microsoft/visualfsharp,"The F# compiler, FSharp.Core library, and tools for F#",F#,2019年4月10日 GMT+8 下午12:26
+checkstyle/checkstyle,https://github.com/checkstyle/checkstyle,"Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. By default it supports the Google Java Style Guide and Sun Code Conventions, but is highly co…",Java,2019年4月10日 GMT+8 上午3:11
+kubernetes/perf-tests,https://github.com/kubernetes/perf-tests,Performance tests and benchmarks,Go,2019年4月10日 GMT+8 上午4:49
+PCSX2/pcsx2,https://github.com/PCSX2/pcsx2,PCSX2 - The Playstation 2 Emulator,C++,2019年4月10日 GMT+8 上午10:06
+NervJS/taro,https://github.com/NervJS/taro,多端统一开发框架，支持用 React 的开发方式编写一次代码，生成能运行在微信/百度/支付宝/字节跳动小程序、H5、React Native 等的应用。 https://taro.js.org/,JavaScript,2019年4月10日 GMT+8 上午10:53
+ros-planning/moveit2,https://github.com/ros-planning/moveit2,"🤖 MoveIt! for ROS 2.0, Alpha",C++,2019年4月9日 GMT+8 下午3:49
+istio/istio,https://github.com/istio/istio,"Connect, secure, control, and observe services.",Go,2019年4月10日 GMT+8 上午11:40
+felixse/FluentTerminal,https://github.com/felixse/FluentTerminal,A Terminal Emulator based on UWP and web technologies.,C#,2019年4月10日 GMT+8 上午4:03
+SalesforceFoundation/Cumulus,https://github.com/SalesforceFoundation/Cumulus,The current version of the Salesforce.org Nonprofit Success Pack,Unknow language,2019年4月10日 GMT+8 上午5:52
+sweetalert2/sweetalert2,https://github.com/sweetalert2/sweetalert2,"A beautiful, responsive, highly customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies.",JavaScript,2019年4月10日 GMT+8 下午12:28
+LibVNC/libvncserver,https://github.com/LibVNC/libvncserver,LibVNCServer/LibVNCClient are cross-platform C libraries that allow you to easily implement VNC server or client functionality in your program.,C,2019年4月8日 GMT+8 下午3:32
+NVIDIA/OpenSeq2Seq,https://github.com/NVIDIA/OpenSeq2Seq,Toolkit for efficient experimentation with various sequence-to-sequence models,Python,2019年4月10日 GMT+8 上午7:48
+AzureAD/microsoft-authentication-library-for-dotnet,https://github.com/AzureAD/microsoft-authentication-library-for-dotnet,Microsoft Authentication Library (MSAL) Preview for .NET,C#,2019年4月10日 GMT+8 上午9:06
+stellar/stellar-core,https://github.com/stellar/stellar-core,"stellar-core is the backbone of the Stellar network. It maintains a local copy of the ledger, communicating and staying in sync with other instances of stellar-core on the network. Optionally, stel…",C,2019年4月10日 GMT+8 上午9:47
+kubernetes/kubernetes,https://github.com/kubernetes/kubernetes,Production-Grade Container Scheduling and Management,Go,2019年4月10日 GMT+8 下午1:53
+tensorflow/tensorflow,https://github.com/tensorflow/tensorflow,An Open Source Machine Learning Framework for Everyone,C++,2019年4月10日 GMT+8 下午1:10
+apache/accumulo,https://github.com/apache/accumulo,Apache Accumulo,Java,2019年4月10日 GMT+8 上午10:32
+rust-lang/rust,https://github.com/rust-lang/rust,Empowering everyone to build reliable and efficient software.,Rust,2019年4月10日 GMT+8 下午1:46
+leebyron/react-loops,https://github.com/leebyron/react-loops,React Loops works with React Hooks as part of the React Velcro Architecture,JavaScript,2019年4月9日 GMT+8 下午1:11
+drcmda/react-three-fiber,https://github.com/drcmda/react-three-fiber,👌A React-renderer for Three.js,JavaScript,2019年4月9日 GMT+8 下午1:07
+Advanced-Frontend/Daily-Interview-Question,https://github.com/Advanced-Frontend/Daily-Interview-Question,工作日每天一道前端大厂面试题，祝大家天天进步，一年后会看到不一样的自己。,Unknow language,2019年4月9日 GMT+8 下午11:23
+Shopify/quilt,https://github.com/Shopify/quilt,A loosely related set of packages for JavaScript / TypeScript projects at Shopify,TypeScript,2019年4月10日 GMT+8 上午9:45
+tensorflow/tensor2tensor,https://github.com/tensorflow/tensor2tensor,Library of deep learning models and datasets designed to make deep learning more accessible and accelerate ML research.,Python,2019年4月10日 GMT+8 上午7:49
+komeiji-satori/Dress,https://github.com/komeiji-satori/Dress,好耶 是女装,Ruby,2019年4月9日 GMT+8 下午5:01
+SAP/jenkins-library,https://github.com/SAP/jenkins-library,Jenkins shared library for Continuous Delivery pipelines.,Groovy,2019年4月10日 GMT+8 上午6:05
+TrustWallet/tokens,https://github.com/TrustWallet/tokens,Directory of ERC20 token images. Upload yours to get displayed in the Trust Wallet,JavaScript,2019年4月10日 GMT+8 下午1:33
+Microsoft/BotBuilder,https://github.com/Microsoft/BotBuilder,Bot Builder provides the most comprehensive experience for building conversation applications,Roff,2019年4月10日 GMT+8 上午10:25
+tootsuite/mastodon,https://github.com/tootsuite/mastodon,"Your self-hosted, globally interconnected microblogging community",Ruby,2019年4月10日 GMT+8 下午1:30
+confluentinc/ksql,https://github.com/confluentinc/ksql,KSQL - the Streaming SQL Engine for Apache Kafka,Java,2019年4月10日 GMT+8 上午7:53
+alibaba/fish-redux,https://github.com/alibaba/fish-redux,An assembled flutter application framework.,Dart,2019年4月8日 GMT+8 下午4:41
+virtual-kubelet/virtual-kubelet,https://github.com/virtual-kubelet/virtual-kubelet,Virtual Kubelet is an open source Kubernetes kubelet implementation.,Go,2019年4月10日 GMT+8 上午9:35
+target/lorri,https://github.com/target/lorri,Your project's nix-env,Rust,2019年4月9日 GMT+8 下午11:24
+rustwasm/gloo,https://github.com/rustwasm/gloo,"A modular toolkit for building fast, reliable Web applications and libraries with Rust and Wasm",Rust,2019年4月8日 GMT+8 下午11:59
+domoticz/domoticz,https://github.com/domoticz/domoticz,Open source Home Automation System,C,2019年4月9日 GMT+8 下午3:25
+gogf/gf,https://github.com/gogf/gf,"GoFrame is a modular, loose-coupled, production-ready and most-powerful application development framework of golang. Providing a series of core components and dozens of practical modules, such as: …",Go,2019年4月10日 GMT+8 上午10:45
+sunpy/sunpy,https://github.com/sunpy/sunpy,SunPy - Python for Solar Physics,Python,2019年4月10日 GMT+8 下午1:01
+mattermost/mattermost-mobile,https://github.com/mattermost/mattermost-mobile,Next generation iOS and Android apps for Mattermost in React Native,JavaScript,2019年4月10日 GMT+8 上午8:48
+jaegertracing/jaeger,https://github.com/jaegertracing/jaeger,"CNCF Jaeger, a Distributed Tracing System",Go,2019年4月9日 GMT+8 下午11:53
+omarroth/invidious,https://github.com/omarroth/invidious,Invidious is an alternative front-end to YouTube,Crystal,2019年4月10日 GMT+8 上午1:34
+harfbuzz/harfbuzz,https://github.com/harfbuzz/harfbuzz,HarfBuzz text shaping engine,C++,2019年4月9日 GMT+8 下午7:36
+grafana/grafana,https://github.com/grafana/grafana,"The tool for beautiful monitoring and metric analytics & dashboards for Graphite, InfluxDB & Prometheus & More",TypeScript,2019年4月10日 GMT+8 上午7:04
+jekyll/jekyll,https://github.com/jekyll/jekyll,🌐 Jekyll is a blog-aware static site generator in Ruby,Ruby,2019年4月7日 GMT+8 下午7:56
+aws/amazon-freertos,https://github.com/aws/amazon-freertos,IoT operating system for microcontrollers.,C,2019年4月10日 GMT+8 下午12:14
+keybase/client,https://github.com/keybase/client,"Keybase Go Library, Client, Service, OS X, iOS, Android, Electron",Go,2019年4月10日 GMT+8 下午12:09
+osmandapp/Osmand,https://github.com/osmandapp/Osmand,OsmAnd,Java,2019年4月10日 GMT+8 上午12:11
+olive-editor/olive,https://github.com/olive-editor/olive,Professional open-source NLE video editor,C++,2019年4月9日 GMT+8 下午12:18
+derailed/k9s,https://github.com/derailed/k9s,🐶 Kubernetes CLI To Manage Your Clusters In Style!,Go,2019年4月8日 GMT+8 下午11:39
+MicrosoftDocs/powerbi-docs,https://github.com/MicrosoftDocs/powerbi-docs,NoDescr,PowerShell,2019年4月10日 GMT+8 上午10:05
+NixOS/nixpkgs,https://github.com/NixOS/nixpkgs,Nix Packages collection,Nix,2019年4月10日 GMT+8 下午1:55
+ArduPilot/ardupilot,https://github.com/ArduPilot/ardupilot,"ArduPlane, ArduCopter, ArduRover source",C++,2019年4月10日 GMT+8 上午11:48
+vuejs/vue,https://github.com/vuejs/vue,"🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",JavaScript,2019年4月10日 GMT+8 上午11:02
+libretro/RetroArch,https://github.com/libretro/RetroArch,"Cross-platform, sophisticated frontend for the libretro API. Licensed GPLv3.",C,2019年4月10日 GMT+8 下午12:23
+carbon-design-system/carbon-website,https://github.com/carbon-design-system/carbon-website,The website for the Carbon Design System,JavaScript,2019年4月10日 GMT+8 上午11:52
+webdriverio/webdriverio,https://github.com/webdriverio/webdriverio,Next-gen WebDriver test automation framework for Node.js,JavaScript,2019年4月10日 GMT+8 上午6:25
+vuejs/vue-cli,https://github.com/vuejs/vue-cli,🛠️ Standard Tooling for Vue.js Development,JavaScript,2019年4月9日 GMT+8 下午10:22
+ethereum/solidity,https://github.com/ethereum/solidity,"Solidity, the Contract-Oriented Programming Language",C++,2019年4月10日 GMT+8 上午3:47
+helm/charts,https://github.com/helm/charts,Curated applications for Kubernetes,Unknow language,2019年4月10日 GMT+8 上午11:58
+nestjs/nest,https://github.com/nestjs/nest,"A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8) 🚀",TypeScript,2019年4月10日 GMT+8 上午7:52
+MicrosoftDocs/azure-docs,https://github.com/MicrosoftDocs/azure-docs,Open source documentation of Microsoft Azure,PowerShell,2019年4月10日 GMT+8 下午12:27
+ansible/ansible,https://github.com/ansible/ansible,Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid writing scripts or custom code to deploy and update your applications — automat…,Python,2019年4月10日 GMT+8 下午1:49
+wordpress-mobile/gutenberg-mobile,https://github.com/wordpress-mobile/gutenberg-mobile,Mobile version of Gutenberg - native iOS and Android,JavaScript,2019年4月10日 GMT+8 上午9:52
+chamilo/chamilo-lms,https://github.com/chamilo/chamilo-lms,Chamilo is a learning management system focused on ease of use and accessibility,PHP,2019年4月10日 GMT+8 上午7:11
+samuelmaddock/metastream,https://github.com/samuelmaddock/metastream,Watch streaming media with friends.,TypeScript,2019年4月10日 GMT+8 下午1:00
+opnsense/core,https://github.com/opnsense/core,"OPNsense GUI, API and systems backend",PHP,2019年4月10日 GMT+8 下午1:55
+Zarel/Pokemon-Showdown,https://github.com/Zarel/Pokemon-Showdown,Pokémon battle simulator.,JavaScript,2019年4月10日 GMT+8 上午6:28
+paritytech/substrate,https://github.com/paritytech/substrate,Substrate: The platform for blockchain innovators,Rust,2019年4月10日 GMT+8 下午1:47
+JanusGraph/janusgraph,https://github.com/JanusGraph/janusgraph,"JanusGraph: an open-source, distributed graph database",Java,2019年4月10日 GMT+8 上午5:36
+ethereum/web3.js,https://github.com/ethereum/web3.js,Ethereum JavaScript API,JavaScript,2019年4月9日 GMT+8 下午9:11
+electron/electron,https://github.com/electron/electron,"Build cross-platform desktop apps with JavaScript, HTML, and CSS",C++,2019年4月10日 GMT+8 下午12:32
+ant-design/ant-design-pro,https://github.com/ant-design/ant-design-pro,👨🏻‍💻👩🏻‍💻 Use Ant Design like a Pro!,JavaScript,2019年4月10日 GMT+8 上午10:50
