@@ -32,11 +32,18 @@ def dumpAllPhoto(title):
     path = './' + title
     if not os.path.exists(path):  # 检测是否有image目录没有则创建
         os.makedirs(path)
+    else:
+        return
 
     for url in list_photo:
         filepath = path + '/' + url[url.rfind('/') + 1:]
 
-        file = urlopen(url)
+        try:
+            file = urlopen(url)
+        except:
+            time.sleep(1000)
+            print('bad:' + url)
+            continue
         fp = open(filepath, 'wb')
         data = file.read()
         print(filepath)
@@ -45,7 +52,9 @@ def dumpAllPhoto(title):
 
 def findinfo(url, max, curr):
 
-    if not curr < max:
+    c = curr
+
+    if not c < max:
         return
 
     html = urlopen(url)
@@ -65,7 +74,8 @@ def findinfo(url, max, curr):
         dumpAllPhoto(name)
         list_photo.clear()
 
-    findinfo(next_page, max, curr++)
+    c = c + 1
+    findinfo(next_page, max, c)
 
 url_one = 'http://www.win4000.com/wallpaper_0_0_0_1.html'
 #
@@ -73,4 +83,4 @@ url_one = 'http://www.win4000.com/wallpaper_0_0_0_1.html'
 #
 # bsobj = BeautifulSoup(html, 'html.parser')
 
-findinfo(url_one)
+findinfo(url_one, 3, 0)
