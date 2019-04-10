@@ -29,11 +29,11 @@ def getspeed():
     time.sleep(1)
     s2 = psutil.net_io_counters(pernic=True)['以太网']
 
-    tick_recv = (s2.bytes_recv - s1.bytes_recv) / 1024
-    tick_sent = (s2.bytes_sent - s1.bytes_sent) / 1024
+    # tick_recv = (s2.bytes_recv - s1.bytes_recv) / 1024
+    # tick_sent = (s2.bytes_sent - s1.bytes_sent) / 1024
 
-    tick_recv = ('%.2f' % tick_recv)
-    tick_sent = ('%.2f' % tick_sent)
+    tick_recv = ('%.2f' % ((s2.bytes_recv - s1.bytes_recv) / 1024))
+    tick_sent = ('%.2f' % ((s2.bytes_sent - s1.bytes_sent) / 1024))
 
     return str(tick_recv) + 'kb/s ' + '/ ' + str(tick_sent) + 'kb/s'
 
